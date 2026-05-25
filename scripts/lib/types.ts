@@ -6,7 +6,9 @@ export interface Candidate {
   skillId: string;
   name: string;
   installs: number;
-  weeklyInstalls: number[];
+  weeklyInstalls?: number[];
+  installsYesterday?: number;
+  change?: number;
   isOfficial: boolean;
   sourceView: LeaderboardView;
   rank: number;

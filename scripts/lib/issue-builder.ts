@@ -44,7 +44,9 @@ export function assembleIssue(input: IssueInput): Issue {
         : copy.caution,
       metrics: {
         installs: item.candidate.installs,
-        weeklyInstalls: item.candidate.weeklyInstalls
+        weeklyInstalls: item.candidate.weeklyInstalls,
+        installsYesterday: item.candidate.installsYesterday,
+        change: item.candidate.change
       },
       status
     };

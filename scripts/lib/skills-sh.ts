@@ -1,7 +1,7 @@
 import type { Candidate, LeaderboardView } from "./types";
 
 const entryPattern =
-  /"source":"([^"]+)","skillId":"([^"]+)","name":"([^"]+)","installs":(\d+),"weeklyInstalls":\[([\d,]*)\](?:,"isOfficial":(true|false))?/g;
+  /"source":"([^"]+)","skillId":"([^"]+)","name":"([^"]+)","installs":(\d+)(?:,"weeklyInstalls":\[([\d,]*)\])?(?:,"installsYesterday":(\d+))?(?:,"change":(-?\d+))?(?:,"isOfficial":(true|false))?/g;
 
 export function parseLeaderboardHtml(
   html: string,
@@ -14,8 +14,14 @@ export function parseLeaderboardHtml(
     skillId: match[2],
     name: match[3],
     installs: Number(match[4]),
-    weeklyInstalls: match[5] === "" ? [] : match[5].split(",").map(Number),
-    isOfficial: match[6] === "true",
+    weeklyInstalls: match[5] === undefined
+      ? undefined
+      : match[5] === ""
+        ? []
+        : match[5].split(",").map(Number),
+    installsYesterday: match[6] === undefined ? undefined : Number(match[6]),
+    change: match[7] === undefined ? undefined : Number(match[7]),
+    isOfficial: match[8] === "true",
     sourceView,
     rank: index + 1,
     skillsUrl: `https://www.skills.sh/${match[1]}/${match[2]}`

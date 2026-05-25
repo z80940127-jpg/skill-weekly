@@ -14,7 +14,9 @@ export const skillCardSchema = z.object({
   caution: z.string().min(6),
   metrics: z.object({
     installs: z.number().int().nonnegative(),
-    weeklyInstalls: z.array(z.number().int().nonnegative())
+    weeklyInstalls: z.array(z.number().int().nonnegative()).optional(),
+    installsYesterday: z.number().int().nonnegative().optional(),
+    change: z.number().int().optional()
   })
 });
 

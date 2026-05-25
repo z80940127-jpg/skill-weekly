@@ -9,6 +9,8 @@ const evidence = {
     name: "Alpha",
     installs: 400,
     weeklyInstalls: [20, 80],
+    installsYesterday: 17,
+    change: 9,
     isOfficial: false,
     sourceView: "trending" as const,
     rank: 1,
@@ -44,5 +46,7 @@ describe("assembleIssue", () => {
     expect(issue.shortfallReason).toContain("仅有 1 个新项目");
     expect(issue.watch[0].caution).toContain("未进入正式精选");
     expect(issue.featured[0].repositoryUrl).toBe("https://github.com/owner/repo");
+    expect(issue.featured[0].metrics.installsYesterday).toBe(17);
+    expect(issue.featured[0].metrics.change).toBe(9);
   });
 });
