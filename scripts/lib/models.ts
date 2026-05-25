@@ -32,13 +32,15 @@ export async function createChineseCopy(
   const response = await fetcher(
     "https://models.github.ai/inference/chat/completions",
     {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        model: "openai/gpt-4o-mini",
+    method: "POST",
+    headers: {
+      Accept: "application/vnd.github+json",
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+      "X-GitHub-Api-Version": "2026-03-10"
+    },
+    body: JSON.stringify({
+      model: "openai/gpt-4.1",
         temperature: 0.2,
         messages: [
           {
