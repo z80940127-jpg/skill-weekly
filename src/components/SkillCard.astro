@@ -1,0 +1,42 @@
+---
+import type { SkillCard as SkillCardData } from "../lib/issue-schema";
+
+interface Props {
+  card: SkillCardData & { status: "featured" | "still-hot" | "watch" };
+}
+
+const { card } = Astro.props;
+---
+
+<article class:list={["skill-card", card.status]}>
+  <header class="card-top">
+    <div>
+      <h3>{card.name}</h3>
+      <p class="repository">{card.source}</p>
+    </div>
+    <span class="install-count">{card.metrics.installs.toLocaleString("zh-CN")} 安装</span>
+  </header>
+  <p class="summary">{card.summary}</p>
+  <dl>
+    <div>
+      <dt>适合谁</dt>
+      <dd>{card.audience}</dd>
+    </div>
+    <div>
+      <dt>兼容工具</dt>
+      <dd>{card.compatibility.join(" / ")}</dd>
+    </div>
+    <div>
+      <dt>入选依据</dt>
+      <dd>{card.reason}</dd>
+    </div>
+    <div>
+      <dt>注意事项</dt>
+      <dd>{card.caution}</dd>
+    </div>
+  </dl>
+  <footer class="card-links">
+    <a href={card.repositoryUrl} target="_blank" rel="noreferrer">查看开源项目</a>
+    <a href={card.sourceUrl} target="_blank" rel="noreferrer">榜单来源</a>
+  </footer>
+</article>

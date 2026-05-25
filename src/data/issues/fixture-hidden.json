@@ -1,0 +1,63 @@
+{
+  "slug": "2026-05-25",
+  "issueNumber": 1,
+  "publishedAt": "2026-05-25",
+  "title": "Skill 周刊 · 第 01 期",
+  "intro": "本期用于验证清爽、可分享的周刊阅读页面。",
+  "shortfallReason": "本期仅展示一条正式精选以验证页面结构。",
+  "featured": [
+    {
+      "key": "owner/alpha:alpha",
+      "source": "owner/alpha",
+      "skillId": "alpha",
+      "name": "Alpha",
+      "repositoryUrl": "https://github.com/owner/alpha",
+      "sourceUrl": "https://www.skills.sh/owner/alpha/alpha",
+      "summary": "帮助用户把资料整理为容易继续使用的清晰摘要。",
+      "audience": "需要整理信息的 AI 工具使用者",
+      "compatibility": ["Codex"],
+      "reason": "近期安装趋势上升，项目说明完整。",
+      "caution": "安装前仍应检查仓库内容与所需权限。",
+      "metrics": { "installs": 300, "weeklyInstalls": [10, 40] },
+      "status": "featured"
+    }
+  ],
+  "stillHot": [
+    {
+      "key": "owner/beta:beta",
+      "source": "owner/beta",
+      "skillId": "beta",
+      "name": "Beta",
+      "repositoryUrl": "https://github.com/owner/beta",
+      "sourceUrl": "https://www.skills.sh/owner/beta/beta",
+      "summary": "此前介绍过且本周仍受到关注的工具流程。",
+      "audience": "希望观察长期热门项目的读者",
+      "compatibility": ["未说明"],
+      "reason": "已入选过正式精选，本周保持热度。",
+      "caution": "请从原仓库确认当前版本是否变化。",
+      "metrics": { "installs": 250, "weeklyInstalls": [30, 38] },
+      "status": "still-hot"
+    }
+  ],
+  "watch": [
+    {
+      "key": "owner/gamma:gamma",
+      "source": "owner/gamma",
+      "skillId": "gamma",
+      "name": "Gamma",
+      "repositoryUrl": "https://github.com/owner/gamma",
+      "sourceUrl": "https://www.skills.sh/owner/gamma/gamma",
+      "summary": "近期有人关注，但项目公开信息仍不足。",
+      "audience": "只希望了解趋势而不立即安装的读者",
+      "compatibility": ["未说明"],
+      "reason": "热度出现上升，但尚不满足正式精选门槛。",
+      "caution": "缺乏充分核验信息，不建议直接安装。",
+      "metrics": { "installs": 90, "weeklyInstalls": [2, 20] },
+      "status": "watch"
+    }
+  ],
+  "sources": [
+    "https://www.skills.sh/trending",
+    "https://github.com/owner/alpha"
+  ]
+}

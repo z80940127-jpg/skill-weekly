@@ -1,19 +1,57 @@
 ---
-import { SITE_DESCRIPTION, SITE_TITLE } from "../lib/site";
+import { getCollection } from "astro:content";
+import SiteLayout from "../layouts/SiteLayout.astro";
+
+const issues = (await getCollection("issues")).sort((a, b) =>
+  b.data.publishedAt.localeCompare(a.data.publishedAt)
+);
+const latest = issues[0]?.data;
+const archive = issues.slice(1).map((issue) => issue.data);
 ---
 
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content={SITE_DESCRIPTION} />
-    <title>{SITE_TITLE}</title>
-  </head>
-  <body>
-    <main>
-      <h1>{SITE_TITLE}</h1>
-      <p>{SITE_DESCRIPTION}</p>
-    </main>
-  </body>
-</html>
+<SiteLayout>
+  <main class="home-page">
+    <section class="home-hero">
+      <h1>每周读懂值得关注的开源 Skills</h1>
+      <p class="lead">
+        从近期热度与公开信息中，整理适合普通 AI 用户阅读的开源 Skill 推荐。
+      </p>
+    </section>
+    {latest ? (
+      <section class="latest" aria-label="最新一期">
+        <div class="latest-meta">
+          <span>最新一期</span>
+          <time datetime={latest.publishedAt}>{latest.publishedAt}</time>
+        </div>
+        <h2>{latest.title}</h2>
+        <p>{latest.intro}</p>
+        <ol>
+          {latest.featured.map((item) => <li>{item.name}</li>)}
+        </ol>
+        <a class="reading-link" href={`/issues/${latest.slug}/`}>阅读最新一期</a>
+      </section>
+    ) : (
+      <p class="empty empty-home">首期内容生成后开放阅读。</p>
+    )}
+    <section class="archive" id="archive">
+      <div class="archive-heading">
+        <h2>往期内容</h2>
+        <p>每一期都保留原项目链接与筛选说明。</p>
+      </div>
+      {archive.length === 0 ? (
+        <p class="empty">第一期发布后，这里将显示历史内容。</p>
+      ) : (
+        <ul>
+          {archive.map((issue) => (
+            <li>
+              <a href={`/issues/${issue.slug}/`}>
+                <span>{issue.title}</span>
+                <time datetime={issue.publishedAt}>{issue.publishedAt}</time>
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
+    </section>
+  </main>
+</SiteLayout>

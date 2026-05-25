@@ -1,0 +1,26 @@
+---
+import SkillCard from "./SkillCard.astro";
+import type { SkillCard as SkillCardData } from "../lib/issue-schema";
+
+interface Props {
+  title: string;
+  explanation: string;
+  items: Array<SkillCardData & { status: "featured" | "still-hot" | "watch" }>;
+}
+
+const { title, explanation, items } = Astro.props;
+---
+
+<section class="issue-section">
+  <div class="section-heading">
+    <h2>{title}</h2>
+    <p>{explanation}</p>
+  </div>
+  {items.length === 0 ? (
+    <p class="empty">本期没有条目。</p>
+  ) : (
+    <div class="card-grid">
+      {items.map((card) => <SkillCard card={card} />)}
+    </div>
+  )}
+</section>

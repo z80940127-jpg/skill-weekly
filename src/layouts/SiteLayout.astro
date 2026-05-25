@@ -1,0 +1,37 @@
+---
+import { SITE_DESCRIPTION, SITE_TITLE } from "../lib/site";
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = SITE_TITLE,
+  description = SITE_DESCRIPTION
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header class="site-nav">
+      <a class="brand" href="/">{SITE_TITLE}</a>
+      <nav aria-label="主导航">
+        <a href="/#archive">往期内容</a>
+      </nav>
+    </header>
+    <slot />
+    <footer class="site-footer">
+      <span>{SITE_TITLE}</span>
+      <p>自动整理公开信息，不构成安全背书或安装建议。</p>
+    </footer>
+  </body>
+</html>

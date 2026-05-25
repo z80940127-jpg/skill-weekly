@@ -1,0 +1,54 @@
+---
+import { getCollection } from "astro:content";
+import IssueSection from "../../components/IssueSection.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import type { Issue } from "../../lib/issue-schema";
+
+export async function getStaticPaths() {
+  const issues = await getCollection("issues");
+
+  return issues.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { issue: entry.data }
+  }));
+}
+
+const { issue } = Astro.props as { issue: Issue };
+---
+
+<SiteLayout title={issue.title} description={issue.intro}>
+  <main class="issue-page">
+    <header class="issue-header">
+      <div class="issue-meta">
+        <span>第 {String(issue.issueNumber).padStart(2, "0")} 期</span>
+        <time datetime={issue.publishedAt}>{issue.publishedAt}</time>
+      </div>
+      <h1>{issue.title}</h1>
+      <p class="lead">{issue.intro}</p>
+      {issue.shortfallReason && <p class="shortfall">{issue.shortfallReason}</p>}
+    </header>
+    <IssueSection
+      title="正式精选"
+      explanation="通过公开来源与基础风险核验的新项目。"
+      items={issue.featured}
+    />
+    <IssueSection
+      title="持续热门"
+      explanation="曾经入选且本周仍有热度，不占正式名额。"
+      items={issue.stillHot}
+    />
+    <IssueSection
+      title="风险观察"
+      explanation="具有热度但核验信息不足，请谨慎判断。"
+      items={issue.watch}
+    />
+    <section class="sources">
+      <h2>信息来源</h2>
+      <ul>
+        {issue.sources.map((source) => (
+          <li><a href={source} target="_blank" rel="noreferrer">{source}</a></li>
+        ))}
+      </ul>
+    </section>
+  </main>
+</SiteLayout>
