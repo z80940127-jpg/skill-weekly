@@ -165,4 +165,76 @@ describe("runPublication", () => {
     expect(result.issue?.slug).toBe("2026-05-25");
     expect(fetchCandidates).not.toHaveBeenCalled();
   });
+
+  it("does not let one unverified repository consume the inspection budget", async () => {
+    const issueDirectory = directory();
+    const overloaded = ["alpha", "beta", "gamma", "delta"].map((skillId) => ({
+      ...candidate(skillId, skillId),
+      source: "owner/watch",
+      key: `owner/watch:${skillId}`
+    }));
+    const verified = {
+      ...candidate("formal", "Formal"),
+      source: "owner/formal",
+      key: "owner/formal:formal"
+    };
+
+    const result = await runPublication({
+      issueDirectory,
+      publishedAt: "2026-05-25",
+      token: "token",
+      candidateLimit: 4
+    }, {
+      fetchCandidates: async () => [...overloaded, verified],
+      fetchEvidence: async (item) => item.source === "owner/watch"
+        ? { ...evidence(item), licenseSpdx: null }
+        : evidence(item),
+      createChineseCopy: async (items) => items.map((item) => ({
+        key: item.candidate.key,
+        summary: `${item.candidate.name} 提供了公开可阅读的技能说明内容。`,
+        audience: "关注开源技能的 AI 工具用户",
+        reason: "近期热度与公开证据同时可供读者核查。",
+        caution: "安装或运行前请先审阅仓库内容与权限。"
+      })),
+      persistIssue
+    });
+
+    expect(result.issue.featured.map((item) => item.key)).toContain(verified.key);
+  });
+
+  it("skips leaderboard sources that are not GitHub repository paths", async () => {
+    const issueDirectory = directory();
+    const external = {
+      ...candidate("external", "External"),
+      source: "open.feishu.cn",
+      key: "open.feishu.cn:external"
+    };
+    const verified = {
+      ...candidate("formal", "Formal"),
+      source: "owner/formal",
+      key: "owner/formal:formal"
+    };
+    const fetchEvidence = vi.fn(async (item: Candidate) => evidence(item));
+
+    const result = await runPublication({
+      issueDirectory,
+      publishedAt: "2026-05-25",
+      token: "token",
+      candidateLimit: 1
+    }, {
+      fetchCandidates: async () => [external, verified],
+      fetchEvidence,
+      createChineseCopy: async (items) => items.map((item) => ({
+        key: item.candidate.key,
+        summary: `${item.candidate.name} provides readable public skill documentation.`,
+        audience: "AI tool users evaluating open source skills",
+        reason: "Recent activity and public evidence can both be inspected.",
+        caution: "Review repository contents and permissions before use."
+      })),
+      persistIssue
+    });
+
+    expect(result.issue.featured.map((item) => item.key)).toContain(verified.key);
+    expect(fetchEvidence).not.toHaveBeenCalledWith(external, "token");
+  });
 });

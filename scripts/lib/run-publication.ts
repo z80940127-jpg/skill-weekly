@@ -6,7 +6,11 @@ import { classifyCandidates } from "./curate";
 import { fetchEvidence } from "./github";
 import { createChineseCopy } from "./models";
 import { fetchCandidates } from "./skills-sh";
+import type { Candidate } from "./types";
 import { persistIssue } from "./write-issue";
+
+const DEFAULT_CANDIDATE_LIMIT = 45;
+const MAX_CANDIDATES_PER_REPOSITORY = 3;
 
 interface PublicationOptions {
   issueDirectory: string;
@@ -40,6 +44,37 @@ function readExistingIssues(directory: string): Issue[] {
     });
 }
 
+function selectCandidatesForInspection(candidates: Candidate[], limit: number): Candidate[] {
+  if (limit <= 0) {
+    return [];
+  }
+
+  const selected: Candidate[] = [];
+  const perRepository = new Map<string, number>();
+
+  for (const candidate of candidates) {
+    if (!/^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/.test(candidate.source)) {
+      continue;
+    }
+
+    const source = candidate.source.toLowerCase();
+    const sourceCount = perRepository.get(source) ?? 0;
+
+    if (sourceCount >= MAX_CANDIDATES_PER_REPOSITORY) {
+      continue;
+    }
+
+    selected.push(candidate);
+    perRepository.set(source, sourceCount + 1);
+
+    if (selected.length === limit) {
+      break;
+    }
+  }
+
+  return selected;
+}
+
 export async function runPublication(
   options: PublicationOptions,
   replacements: Partial<PublicationDependencies> = {}
@@ -62,8 +97,10 @@ export async function runPublication(
     return { created: false, issue: existingForDate };
   }
 
-  const candidates = (await dependencies.fetchCandidates())
-    .slice(0, options.candidateLimit ?? 30);
+  const candidates = selectCandidatesForInspection(
+    await dependencies.fetchCandidates(),
+    options.candidateLimit ?? DEFAULT_CANDIDATE_LIMIT
+  );
   const evidence = [];
 
   for (const candidate of candidates) {
