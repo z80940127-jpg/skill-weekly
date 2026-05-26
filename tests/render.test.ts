@@ -14,6 +14,7 @@ describe("static pages", () => {
 
     const home = readFileSync("dist/index.html", "utf8");
     const issue = readFileSync("dist/issues/2026-05-25/index.html", "utf8");
+    expect(home).toContain("home-feature with-latest");
     expect(home).toContain("Skill 周刊 · 第 01 期");
     expect(issue).toContain("正式精选");
     expect(issue).toContain("持续热门");

@@ -11,28 +11,30 @@ const archive = issues.slice(1).map((issue) => issue.data);
 
 <SiteLayout>
   <main class="home-page">
-    <section class="home-hero">
-      <h1>每周读懂值得关注的开源 Skills</h1>
-      <p class="lead">
-        从近期热度与公开信息中，整理适合普通 AI 用户阅读的开源 Skill 推荐。
-      </p>
-    </section>
-    {latest ? (
-      <section class="latest" aria-label="最新一期">
-        <div class="latest-meta">
-          <span>最新一期</span>
-          <time datetime={latest.publishedAt}>{latest.publishedAt}</time>
-        </div>
-        <h2>{latest.title}</h2>
-        <p>{latest.intro}</p>
-        <ol>
-          {latest.featured.map((item) => <li>{item.name}</li>)}
-        </ol>
-        <a class="reading-link" href={`/issues/${latest.slug}/`}>阅读最新一期</a>
+    <div class:list={["home-feature", latest && "with-latest"]}>
+      <section class="home-hero">
+        <h1>每周读懂值得关注的开源 Skills</h1>
+        <p class="lead">
+          从近期热度与公开信息中，整理适合普通 AI 用户阅读的开源 Skill 推荐。
+        </p>
       </section>
-    ) : (
-      <p class="empty empty-home">首期内容生成后开放阅读。</p>
-    )}
+      {latest ? (
+        <section class="latest" aria-label="最新一期">
+          <div class="latest-meta">
+            <span>最新一期</span>
+            <time datetime={latest.publishedAt}>{latest.publishedAt}</time>
+          </div>
+          <h2>{latest.title}</h2>
+          <p>{latest.intro}</p>
+          <ol>
+            {latest.featured.map((item) => <li>{item.name}</li>)}
+          </ol>
+          <a class="reading-link" href={`/issues/${latest.slug}/`}>阅读最新一期</a>
+        </section>
+      ) : (
+        <p class="empty empty-home">首期内容生成后开放阅读。</p>
+      )}
+    </div>
     <section class="archive" id="archive">
       <div class="archive-heading">
         <h2>往期内容</h2>
