@@ -1,0 +1,220 @@
+{
+  "slug": "2026-05-26",
+  "issueNumber": 1,
+  "publishedAt": "2026-05-26",
+  "title": "Skill 周刊 · 第 01 期",
+  "intro": "本期依据近期热度与公开仓库信息，整理可供中文读者了解的开源 Agent Skills。",
+  "shortfallReason": null,
+  "featured": [
+    {
+      "key": "mattpocock/skills:grill-me",
+      "source": "mattpocock/skills",
+      "skillId": "grill-me",
+      "name": "grill-me",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-me",
+      "summary": "“grill-me”技能用于对用户的计划或设计进行深入、持续的提问，逐步梳理每个决策分支，直到达成共同理解。适合用户希望对方案进行压力测试或主动要求“grill me”时使用。",
+      "audience": "工程师、产品经理、设计者等需要严密审查方案的人群",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "帮助用户发现计划中的潜在问题，确保每个决策点被充分讨论和理解。",
+      "caution": "过程可能耗时且压力较大，不适合寻求快速反馈或初步讨论的场景。",
+      "metrics": {
+        "installs": 6309
+      },
+      "status": "featured"
+    },
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:nano-banana-2",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "nano-banana-2",
+      "name": "nano-banana-2",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/nano-banana-2",
+      "summary": "“nano-banana-2”技能可在RunComfy平台上用Google Nano Banana 2模型生成图像，内置优化提示模式，支持快速迭代、图像内文字渲染、可预测构图及可选网页上下文。",
+      "audience": "需要高效生成图像、注重输出质量和构图稳定性的创意工作者、设计师",
+      "compatibility": [
+        "Gemini"
+      ],
+      "reason": "利用模型优势和优化提示，提升图像生成效率和质量，适合多样化创意需求。",
+      "caution": "仅适用于Gemini平台，具体价格和分辨率需参考官方文档。",
+      "metrics": {
+        "installs": 6060
+      },
+      "status": "featured"
+    },
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:ai-image-generation",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/ai-image-generation",
+      "summary": "“ai-image-generation”技能通过RunComfy CLI，支持多种主流模型（如FLUX、Nano Banana 2、GPT Image 2等）进行文本生成图像和图像编辑，涵盖多种生成与编辑场景。",
+      "audience": "需要多模型图像生成与编辑的AI创作者、设计师、开发者",
+      "compatibility": [
+        "Gemini"
+      ],
+      "reason": "集成多模型能力，适合复杂或多样化的图像生成与编辑需求。",
+      "caution": "仅适用于Gemini平台，需使用RunComfy CLI工具。",
+      "metrics": {
+        "installs": 6042
+      },
+      "status": "featured"
+    },
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:wan-2-7",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "wan-2-7",
+      "name": "wan-2-7",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/wan-2-7",
+      "summary": "“wan-2-7”技能可用Wan 2.7模型在RunComfy平台生成文本到视频，支持多参考条件、音频驱动口型同步、平滑过渡等高级功能，并提供模型切换建议。",
+      "audience": "需要高质量AI视频生成、动画制作的内容创作者、视频设计师",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适合复杂视频生成场景，支持多种输入和高级动画效果。",
+      "caution": "兼容性未说明，具体使用需参考RunComfy平台说明。",
+      "metrics": {
+        "installs": 6031
+      },
+      "status": "featured"
+    },
+    {
+      "key": "mattpocock/skills:grill-with-docs",
+      "source": "mattpocock/skills",
+      "skillId": "grill-with-docs",
+      "name": "grill-with-docs",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-with-docs",
+      "summary": "“grill-with-docs”技能在压力测试方案时，结合项目领域模型和术语，实时更新文档（如CONTEXT.md、ADRs），确保决策与项目语言和历史一致。",
+      "audience": "工程师、项目经理、文档维护者需严格审查并同步文档的场景",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "帮助方案与项目现有文档和术语保持一致，提升团队协作和知识沉淀。",
+      "caution": "过程较为严谨，适合成熟项目或需文档同步的设计讨论。",
+      "metrics": {
+        "installs": 5952
+      },
+      "status": "featured"
+    }
+  ],
+  "stillHot": [],
+  "watch": [
+    {
+      "key": "skills-shell/skills:ai-image-generation",
+      "source": "skills-shell/skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/skills-shell/skills/ai-image-generation",
+      "summary": "“ai-image-generation”技能通过inference.sh CLI，支持50+模型（如GPT-Image-2、FLUX、Gemini等）进行文本生成图像、图像编辑、上色、文字渲染等多种AI视觉任务。",
+      "audience": "需要多模型AI图像生成、编辑的创意工作者、开发者、设计师",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "覆盖广泛模型和功能，适合多样化AI视觉创作和产品开发。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21379
+      },
+      "status": "watch"
+    },
+    {
+      "key": "skills-shell/skills:ai-video-generation",
+      "source": "skills-shell/skills",
+      "skillId": "ai-video-generation",
+      "name": "ai-video-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/skills-shell/skills/ai-video-generation",
+      "summary": "“ai-video-generation”技能通过inference.sh CLI，支持40+模型（如Google Veo、Seedance、Wan等）进行文本到视频、图像到视频、视频编辑、口型同步、动画等多种AI视频任务。",
+      "audience": "需要AI视频生成、动画制作、内容创作的设计师、开发者",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "集成多模型能力，适合多样化视频生成和编辑需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21276
+      },
+      "status": "watch"
+    },
+    {
+      "key": "skills-shell/skills:remotion-render",
+      "source": "skills-shell/skills",
+      "skillId": "remotion-render",
+      "name": "remotion-render",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/skills-shell/skills/remotion-render",
+      "summary": "“remotion-render”技能通过inference.sh，将React/Remotion组件代码（TSX）渲染为MP4视频，支持所有Remotion API，适合程序化视频生成和动画设计。",
+      "audience": "需要将React动画、数据驱动内容转为视频的开发者、设计师",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "支持复杂动画和程序化视频生成，适合自动化内容生产和创意开发。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21240
+      },
+      "status": "watch"
+    },
+    {
+      "key": "vercel-labs/skills:find-skills",
+      "source": "vercel-labs/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/vercel-labs/skills",
+      "sourceUrl": "https://www.skills.sh/vercel-labs/skills/find-skills",
+      "summary": "“find-skills”技能帮助用户发现和安装适合需求的agent技能，适用于用户提出“如何做X”、“寻找技能”等扩展功能场景。",
+      "audience": "希望扩展AI agent能力、寻找新技能的用户、开发者",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "简化技能发现和安装流程，提升agent功能扩展效率。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 17695
+      },
+      "status": "watch"
+    },
+    {
+      "key": "soultrace-ai/soultrace-skill:soultrace",
+      "source": "soultrace-ai/soultrace-skill",
+      "skillId": "soultrace",
+      "name": "soultrace",
+      "repositoryUrl": "https://github.com/soultrace-ai/soultrace-skill",
+      "sourceUrl": "https://www.skills.sh/soultrace-ai/soultrace-skill/soultrace",
+      "summary": "“soultrace”技能通过SoulTrace API进行个性测试，采用五色心理模型和贝叶斯自适应问卷，输出25种心理原型，适合用户了解自身性格和心理特征。",
+      "audience": "希望进行个性测试、心理分析的用户、心理学爱好者",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "提供科学的心理测评和原型分类，帮助用户自我认知。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 13815
+      },
+      "status": "watch"
+    }
+  ],
+  "sources": [
+    "https://www.skills.sh/trending",
+    "https://www.skills.sh/hot",
+    "https://github.com/mattpocock/skills",
+    "https://github.com/agentspace-so/runcomfy-agent-skills",
+    "https://github.com/inference-sh/skills",
+    "https://github.com/vercel-labs/skills",
+    "https://github.com/soultrace-ai/soultrace-skill"
+  ]
+}
