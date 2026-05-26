@@ -63,4 +63,41 @@ describe("createChineseCopy", () => {
       }), { status: 200 })) as unknown as typeof fetch
     )).rejects.toThrow();
   });
+
+  it("keeps multi-card documentation excerpts within the model prompt budget", async () => {
+    const manyItems = Array.from({ length: 15 }, (_, index) => ({
+      ...evidence[0],
+      candidate: {
+        ...evidence[0].candidate,
+        key: `owner/repo:skill-${index}`,
+        skillId: `skill-${index}`,
+        name: `Skill ${index}`
+      },
+      description: "D".repeat(1_000),
+      readme: "R".repeat(10_000),
+      skillText: "S".repeat(10_000)
+    }));
+    let promptContent = "";
+
+    await createChineseCopy(
+      manyItems,
+      "token",
+      (async (_url: URL | RequestInfo, init?: RequestInit) => {
+        const requestBody = JSON.parse(String(init?.body));
+        promptContent = requestBody.messages[1].content;
+
+        return new Response(JSON.stringify({
+          choices: [{ message: { content: JSON.stringify(manyItems.map((item) => ({
+            key: item.candidate.key,
+            summary: "Public documentation provides a readable skill overview.",
+            audience: "AI tool users reviewing public skills",
+            reason: "Public evidence is available for editorial review.",
+            caution: "Review the repository before trying the workflow."
+          }))) } }]
+        }), { status: 200 });
+      }) as unknown as typeof fetch
+    );
+
+    expect(promptContent.length).toBeLessThanOrEqual(20_000);
+  });
 });

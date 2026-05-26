@@ -1,6 +1,11 @@
 import { z } from "zod";
 import type { Evidence } from "./github";
 
+const MAX_PROMPT_EVIDENCE_CHARS = 20_000;
+const TOTAL_DOCUMENTATION_CHARS = 10_000;
+const MAX_DOCUMENT_EXCERPT_CHARS = 1_200;
+const MAX_DESCRIPTION_CHARS = 240;
+
 const copySchema = z.object({
   key: z.string().min(3),
   summary: z.string().min(10),
@@ -15,20 +20,35 @@ interface ChatResponse {
   choices?: Array<{ message?: { content?: string } }>;
 }
 
+function serializeEvidenceForPrompt(items: Evidence[]): string {
+  const excerptLength = Math.min(
+    MAX_DOCUMENT_EXCERPT_CHARS,
+    Math.floor(TOTAL_DOCUMENTATION_CHARS / Math.max(items.length * 2, 1))
+  );
+  const evidence = items.map((item) => ({
+    key: item.candidate.key,
+    name: item.candidate.name,
+    source: item.candidate.source,
+    description: item.description.slice(0, MAX_DESCRIPTION_CHARS),
+    readme: item.readme.slice(0, excerptLength),
+    skillText: item.skillText?.slice(0, excerptLength) ?? "",
+    compatibility: item.compatibility
+  }));
+  const serialized = JSON.stringify(evidence);
+
+  if (serialized.length > MAX_PROMPT_EVIDENCE_CHARS) {
+    throw new Error("Selected evidence exceeds the GitHub Models prompt budget.");
+  }
+
+  return serialized;
+}
+
 export async function createChineseCopy(
   items: Evidence[],
   token: string,
   fetcher: typeof fetch = fetch
 ): Promise<GeneratedCopy[]> {
-  const evidence = items.map((item) => ({
-    key: item.candidate.key,
-    name: item.candidate.name,
-    source: item.candidate.source,
-    description: item.description,
-    readme: item.readme.slice(0, 2400),
-    skillText: item.skillText?.slice(0, 2400) ?? "",
-    compatibility: item.compatibility
-  }));
+  const evidence = serializeEvidenceForPrompt(items);
   const response = await fetcher(
     "https://models.github.ai/inference/chat/completions",
     {
@@ -52,7 +72,7 @@ export async function createChineseCopy(
               "输出 JSON 数组，字段仅为 key, summary, audience, reason, caution。"
             ].join("")
           },
-          { role: "user", content: JSON.stringify(evidence) }
+          { role: "user", content: evidence }
         ]
       })
     }
