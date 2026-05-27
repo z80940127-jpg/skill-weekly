@@ -2,6 +2,8 @@
 
 一个面向普通 AI 工具用户的中文阅读站点。每周自动整理近期热门的开源 Agent Skills，核对公开仓库证据后发布最多 5 个新的正式精选，并保留来源链接和风险提示。
 
+网站地址：[https://skill-weekly.vercel.app/](https://skill-weekly.vercel.app/)
+
 ## 阅读规则
 
 - 候选来源为 [skills.sh trending](https://www.skills.sh/trending) 与 [skills.sh hot](https://www.skills.sh/hot)。
@@ -52,8 +54,8 @@ npm run build
 1. 将本仓库推送为公开 GitHub 仓库，并确认默认分支包含发布工作流。
 2. 在 GitHub 仓库的 **Actions** 页面手动运行 **Publish weekly issue**。
 3. 确认工作流提交了 `src/data/issues/YYYY-MM-DD.json`，打开本地或预览构建检查真实首期内容。
-4. 在 EdgeOne Pages 中导入该 GitHub 仓库，构建命令填写 `npm run build`，输出目录填写 `dist`，Node.js 版本选择 `22` 或更高。
-5. 使用 EdgeOne Pages 提供的平台地址发布；第一版不需要购买域名或进行域名备案。
+4. 在 Vercel 中连接该 GitHub 仓库的 `main` 分支，构建命令使用 `npm run build`，输出目录使用 `dist`。
+5. 访问 [https://skill-weekly.vercel.app/](https://skill-weekly.vercel.app/)；发布工作流提交新的期刊文件后，Vercel 会自动构建并更新这个地址。
 
 这样网站第一次公开可访问时，仓库中已经有真实可阅读内容，而不是演示数据。
 
