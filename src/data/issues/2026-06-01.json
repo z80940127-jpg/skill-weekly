@@ -1,0 +1,282 @@
+{
+  "slug": "2026-06-01",
+  "issueNumber": 2,
+  "publishedAt": "2026-06-01",
+  "title": "Skill 周刊 · 第 02 期",
+  "intro": "本期依据近期热度与公开仓库信息，整理可供中文读者了解的开源 Agent Skills。",
+  "shortfallReason": null,
+  "featured": [
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:face-swap",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "face-swap",
+      "name": "face-swap",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/face-swap",
+      "summary": "在 RunComfy 平台通过 CLI 实现人脸或角色替换，支持视频和图片，涵盖音频驱动动画、精准静态图像换脸等多种模型路由。",
+      "audience": "需要在视频或图片中进行人脸/角色替换的用户，尤其是内容创作者和媒体编辑者。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "提供多模型支持，满足不同场景下的人脸替换需求，提升创作灵活性。",
+      "caution": "兼容性未说明，具体支持的代理或平台需进一步确认。",
+      "metrics": {
+        "installs": 5909
+      },
+      "status": "featured"
+    },
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:image-outpainting",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "image-outpainting",
+      "name": "image-outpainting",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/image-outpainting",
+      "summary": "在 RunComfy 平台通过 CLI 实现图片扩展（outpainting），可将图片画布延展、补全未拍摄区域、改变比例，同时保留原始内容。",
+      "audience": "需要扩展图片边界、改变图片比例或补全画面内容的设计师、摄影师等。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "支持多模型路由，适用于多种图片扩展场景，提升图片处理能力。",
+      "caution": "兼容性未说明，需确认具体支持的代理或平台。",
+      "metrics": {
+        "installs": 5900
+      },
+      "status": "featured"
+    },
+    {
+      "key": "doany-ai/skills:video-edit",
+      "source": "doany-ai/skills",
+      "skillId": "video-edit",
+      "name": "video-edit",
+      "repositoryUrl": "https://github.com/doany-ai/skills",
+      "sourceUrl": "https://www.skills.sh/doany-ai/skills/video-edit",
+      "summary": "在 RunComfy 平台智能路由视频编辑需求，匹配用户意图至合适的编辑模型，支持风格重塑、背景替换、包装更换、身份与动作保留等。",
+      "audience": "需要对现有视频进行多样化编辑的内容创作者、媒体工作者。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "自动匹配编辑模型，简化视频编辑流程，满足多种视频处理需求。",
+      "caution": "兼容性未说明，需确认支持的代理或平台。",
+      "metrics": {
+        "installs": 5585
+      },
+      "status": "featured"
+    },
+    {
+      "key": "agentspace-so/agent-skills:gpt-image-2",
+      "source": "agentspace-so/agent-skills",
+      "skillId": "gpt-image-2",
+      "name": "gpt-image-2",
+      "repositoryUrl": "https://github.com/agentspace-so/agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/agent-skills/gpt-image-2",
+      "summary": "通过 GPT Image 2（ChatGPT Images 2.0）在 Claude Code 等代理中生成和编辑图片，支持文本生成、图片编辑、风格迁移、多参考图像，需 ChatGPT Plus/Pro 订阅。",
+      "audience": "拥有 ChatGPT Plus/Pro 订阅，需在 AI代理中生成或编辑图片的用户。",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor"
+      ],
+      "reason": "无需额外 OpenAI 访问或按图计费，集成多种图片生成与编辑能力。",
+      "caution": "仅支持 Codex、Claude Code、Cursor 等代理。",
+      "metrics": {
+        "installs": 5567
+      },
+      "status": "featured"
+    },
+    {
+      "key": "doany-ai/skills:image-inpainting",
+      "source": "doany-ai/skills",
+      "skillId": "image-inpainting",
+      "name": "image-inpainting",
+      "repositoryUrl": "https://github.com/doany-ai/skills",
+      "sourceUrl": "https://www.skills.sh/doany-ai/skills/image-inpainting",
+      "summary": "在 RunComfy 平台通过 CLI 实现遮罩驱动的图片修复（inpainting），支持专用修复端点和多种身份保留编辑模型。",
+      "audience": "需要修复图片、去除或填补画面内容的设计师、摄影师等。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "多模型支持，适用于复杂图片修复场景，提升图片编辑灵活性。",
+      "caution": "兼容性未说明，需确认具体支持的代理或平台。",
+      "metrics": {
+        "installs": 5550
+      },
+      "status": "featured"
+    }
+  ],
+  "stillHot": [
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:ai-image-generation",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/ai-image-generation",
+      "summary": "在 RunComfy 平台通过 CLI 智能路由生成和编辑图片，支持多种主流模型（FLUX、Google Nano Banana、OpenAI GPT Image 2、ByteDance Seedream等），适用于多样化图片创作。",
+      "audience": "需要使用多种 AI 模型进行图片生成与编辑的内容创作者、设计师。",
+      "compatibility": [
+        "Gemini"
+      ],
+      "reason": "集成多模型，满足不同图片生成与编辑需求，提升创作效率。",
+      "caution": "仅标明兼容 Gemini，其他代理支持情况未说明。",
+      "metrics": {
+        "installs": 5933
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-me",
+      "source": "mattpocock/skills",
+      "skillId": "grill-me",
+      "name": "grill-me",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-me",
+      "summary": "对用户的计划或设计进行深入盘问，逐步解析决策树，帮助用户压力测试方案并达成共识。",
+      "audience": "希望对方案进行压力测试、深入讨论设计细节的工程师、项目负责人。",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "通过持续提问，发现潜在问题，优化方案设计。",
+      "caution": "仅支持 Codex、Claude Code 等代理。",
+      "metrics": {
+        "installs": 3463
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-with-docs",
+      "source": "mattpocock/skills",
+      "skillId": "grill-with-docs",
+      "name": "grill-with-docs",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-with-docs",
+      "summary": "结合项目文档和领域模型，对用户方案进行盘问，优化术语并实时更新文档，适用于方案压力测试与决策记录。",
+      "audience": "需要将方案与项目文档、领域模型结合进行压力测试和文档更新的工程师、项目负责人。",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "强化方案与项目语境的契合度，提升决策透明度和文档完整性。",
+      "caution": "仅支持 Codex、Claude Code 等代理。",
+      "metrics": {
+        "installs": 3256
+      },
+      "status": "still-hot"
+    }
+  ],
+  "watch": [
+    {
+      "key": "vercel-labs/skills:find-skills",
+      "source": "vercel-labs/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/vercel-labs/skills",
+      "sourceUrl": "https://www.skills.sh/vercel-labs/skills/find-skills",
+      "summary": "帮助用户发现和安装代理技能，适用于用户寻求扩展功能或寻找特定技能时。",
+      "audience": "希望扩展代理功能、寻找可安装技能的用户。",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "简化技能发现与安装流程，提升代理可用性。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 12734
+      },
+      "status": "watch"
+    },
+    {
+      "key": "skills-shell/skills:ai-image-generation",
+      "source": "skills-shell/skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/skills-shell/skills/ai-image-generation",
+      "summary": "通过 inference.sh CLI 使用 50+ 模型（如 GPT-Image-2、FLUX、Gemini、Grok、Seedream、Reve 等）生成和编辑 AI 图片，支持文本生成、图片编辑、修复、放大、文本渲染等。",
+      "audience": "需要多模型支持的 AI 图片生成与编辑用户，内容创作者、设计师。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "覆盖多种生成与编辑能力，适用于复杂图片创作场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 7174
+      },
+      "status": "watch"
+    },
+    {
+      "key": "skills-shell/skills:ai-video-generation",
+      "source": "skills-shell/skills",
+      "skillId": "ai-video-generation",
+      "name": "ai-video-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/skills-shell/skills/ai-video-generation",
+      "summary": "通过 inference.sh CLI 使用 40+ 模型（如 Google Veo、Seedance、Wan、Grok 等）生成和编辑 AI 视频，支持文本生成、图片转视频、参考视频生成、视频编辑、动画、放大等。",
+      "audience": "需要多模型支持的 AI 视频生成与编辑用户，内容创作者、媒体工作者。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "集成多种视频生成与编辑能力，适用于多样化视频创作需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 7130
+      },
+      "status": "watch"
+    },
+    {
+      "key": "skills-shell/skills:ai-avatar-video",
+      "source": "skills-shell/skills",
+      "skillId": "ai-avatar-video",
+      "name": "ai-avatar-video",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/skills-shell/skills/ai-avatar-video",
+      "summary": "通过 inference.sh CLI 创建 AI 头像和说话头视频，支持音频驱动、文本生成头像、口型同步、情感语音等，推荐 P-Video-Avatar 及多种音频模型。",
+      "audience": "需要生成 AI 头像、说话头视频的内容创作者、教育、营销等领域用户。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "支持多模型和多语言情感语音，适用于多样化头像视频生成场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 7089
+      },
+      "status": "watch"
+    },
+    {
+      "key": "soultrace-ai/soultrace-skill:soultrace",
+      "source": "soultrace-ai/soultrace-skill",
+      "skillId": "soultrace",
+      "name": "soultrace",
+      "repositoryUrl": "https://github.com/soultrace-ai/soultrace-skill",
+      "sourceUrl": "https://www.skills.sh/soultrace-ai/soultrace-skill/soultrace",
+      "summary": "通过 SoulTrace API 进行个性测试，采用五色心理模型（结构、理解、主动性、强度、连接），适用于探索心理原型和个性特征。",
+      "audience": "希望了解自身心理原型、个性特征或进行色彩型人格测试的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "提供结构化心理评估，帮助用户深入了解自我。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 6087
+      },
+      "status": "watch"
+    }
+  ],
+  "sources": [
+    "https://www.skills.sh/trending",
+    "https://www.skills.sh/hot",
+    "https://github.com/agentspace-so/runcomfy-agent-skills",
+    "https://github.com/doany-ai/skills",
+    "https://github.com/agentspace-so/agent-skills",
+    "https://github.com/mattpocock/skills",
+    "https://github.com/vercel-labs/skills",
+    "https://github.com/inference-sh/skills",
+    "https://github.com/soultrace-ai/soultrace-skill"
+  ]
+}
