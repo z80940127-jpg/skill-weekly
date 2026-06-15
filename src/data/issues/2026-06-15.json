@@ -1,0 +1,261 @@
+{
+  "slug": "2026-06-15",
+  "issueNumber": 4,
+  "publishedAt": "2026-06-15",
+  "title": "Skill 周刊 · 第 04 期",
+  "intro": "本期依据近期热度与公开仓库信息，整理可供中文读者了解的开源 Agent Skills。",
+  "shortfallReason": null,
+  "featured": [
+    {
+      "key": "scrapegraphai/just-scrape:just-scrape",
+      "source": "scrapegraphai/just-scrape",
+      "skillId": "just-scrape",
+      "name": "just-scrape",
+      "repositoryUrl": "https://github.com/ScrapeGraphAI/just-scrape",
+      "sourceUrl": "https://www.skills.sh/scrapegraphai/just-scrape/just-scrape",
+      "summary": "just-scrape 是 ScrapeGraphAI 的命令行工具，支持网页搜索、爬取、结构化数据提取、多页抓取和页面变更监控，可将任意 URL 转换为 markdown、HTML、截图、链接、图片和摘要。",
+      "audience": "需要自动化网页内容抓取、数据提取或页面监控的开发者和工程师。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适用于用户提出网页搜索、抓取、内容提取、文档爬取、页面监控等需求。",
+      "caution": "兼容性和安装要求未详细说明，需关注 ScrapeGraphAI API 配置。",
+      "metrics": {
+        "installs": 7575
+      },
+      "status": "featured"
+    },
+    {
+      "key": "mattpocock/skills:teach",
+      "source": "mattpocock/skills",
+      "skillId": "teach",
+      "name": "teach",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/teach",
+      "summary": "teach 技能用于在当前工作空间内教授新技能或概念，支持多次会话，适合持续学习。",
+      "audience": "希望系统性学习新技能或概念的用户，尤其是工程师。",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "适用于用户主动要求学习某个主题或技能，支持多轮教学。",
+      "caution": "仅支持 Codex 和 Claude Code 平台。",
+      "metrics": {
+        "installs": 3355
+      },
+      "status": "featured"
+    },
+    {
+      "key": "xixu-me/skills:github-actions-docs",
+      "source": "xixu-me/skills",
+      "skillId": "github-actions-docs",
+      "name": "github-actions-docs",
+      "repositoryUrl": "https://github.com/xixu-me/skills",
+      "sourceUrl": "https://www.skills.sh/xixu-me/skills/github-actions-docs",
+      "summary": "github-actions-docs 技能为 GitHub Actions 工作流编写、解释、定制、迁移、安全和故障排查提供官方文档和 YAML 指南。",
+      "audience": "需要 GitHub Actions 官方文档、工作流指导或故障排查的开发者。",
+      "compatibility": [
+        "Claude Code"
+      ],
+      "reason": "适用于用户提出与 GitHub Actions 工作流相关的具体问题或需求。",
+      "caution": "仅支持 Claude Code 平台。",
+      "metrics": {
+        "installs": 2765
+      },
+      "status": "featured"
+    },
+    {
+      "key": "xixu-me/skills:use-my-browser",
+      "source": "xixu-me/skills",
+      "skillId": "use-my-browser",
+      "name": "use-my-browser",
+      "repositoryUrl": "https://github.com/xixu-me/skills",
+      "sourceUrl": "https://www.skills.sh/xixu-me/skills/use-my-browser",
+      "summary": "use-my-browser 技能用于依赖用户实时浏览器会话或页面渲染状态的任务，如调试、表单、上传、下载、DOM 检查等。",
+      "audience": "需要与本地浏览器状态、DevTools、登录后台、表单等交互的工程师和开发者。",
+      "compatibility": [
+        "Claude Code"
+      ],
+      "reason": "适用于用户提出涉及浏览器实时状态、调试或页面交互的需求。",
+      "caution": "仅支持 Claude Code 平台。",
+      "metrics": {
+        "installs": 2714
+      },
+      "status": "featured"
+    },
+    {
+      "key": "xixu-me/skills:secure-linux-web-hosting",
+      "source": "xixu-me/skills",
+      "skillId": "secure-linux-web-hosting",
+      "name": "secure-linux-web-hosting",
+      "repositoryUrl": "https://github.com/xixu-me/skills",
+      "sourceUrl": "https://www.skills.sh/xixu-me/skills/secure-linux-web-hosting",
+      "summary": "secure-linux-web-hosting 技能用于云服务器自托管网站的安全部署，包括 DNS、SSH、防火墙、Nginx、HTTPS、反向代理和网络优化。",
+      "audience": "需要安全部署和加固 Linux 云服务器进行网站托管的开发者和运维人员。",
+      "compatibility": [
+        "Claude Code"
+      ],
+      "reason": "适用于用户提出服务器部署、安全加固、HTTPS 配置等需求。",
+      "caution": "仅支持 Claude Code 平台。",
+      "metrics": {
+        "installs": 2707
+      },
+      "status": "featured"
+    }
+  ],
+  "stillHot": [
+    {
+      "key": "mattpocock/skills:grill-me",
+      "source": "mattpocock/skills",
+      "skillId": "grill-me",
+      "name": "grill-me",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-me",
+      "summary": "grill-me 技能用于对用户的方案或设计进行深入、全面的问询，直至达成共识，适合压力测试设计和决策树分析。",
+      "audience": "希望对方案进行严格审查和压力测试的工程师、设计者。",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "适用于用户主动要求“grill me”或希望对设计进行全面质询。",
+      "caution": "仅支持 Codex 和 Claude Code 平台。",
+      "metrics": {
+        "installs": 3972
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-with-docs",
+      "source": "mattpocock/skills",
+      "skillId": "grill-with-docs",
+      "name": "grill-with-docs",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-with-docs",
+      "summary": "grill-with-docs 技能结合项目文档和领域模型，对方案进行深入问询并实时更新文档，适合决策记录和术语统一。",
+      "audience": "需要将设计压力测试与项目文档同步更新的工程师和团队。",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "适用于用户希望方案与项目文档、领域语言紧密结合并实时记录决策。",
+      "caution": "仅支持 Codex 和 Claude Code 平台。",
+      "metrics": {
+        "installs": 3524
+      },
+      "status": "still-hot"
+    }
+  ],
+  "watch": [
+    {
+      "key": "qu-skills/skills:ai-video-generation",
+      "source": "qu-skills/skills",
+      "skillId": "ai-video-generation",
+      "name": "ai-video-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/qu-skills/skills/ai-video-generation",
+      "summary": "ai-video-generation 技能通过 inference.sh CLI 调用 Google Veo、Seedance 2.0、HappyHorse 等 40+ 模型，实现文本、图片到视频生成、视频编辑、动画、升频等功能。",
+      "audience": "需要 AI 视频生成、编辑、动画、口型同步等功能的创作者和开发者。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "适用于用户提出 AI 视频生成、动画、视频编辑等需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21436
+      },
+      "status": "watch"
+    },
+    {
+      "key": "qu-skills/skills:remotion-render",
+      "source": "qu-skills/skills",
+      "skillId": "remotion-render",
+      "name": "remotion-render",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/qu-skills/skills/remotion-render",
+      "summary": "remotion-render 技能通过 inference.sh 渲染 React/Remotion 组件代码为视频，支持所有 Remotion API，可配置分辨率、帧率、时长和编码。",
+      "audience": "需要将 React 动画、数据驱动视频、程序化图形转为视频的开发者和设计师。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "适用于用户提出基于 React/Remotion 的视频生成需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21421
+      },
+      "status": "watch"
+    },
+    {
+      "key": "qu-skills/skills:ai-image-generation",
+      "source": "qu-skills/skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/qu-skills/skills/ai-image-generation",
+      "summary": "ai-image-generation 技能通过 inference.sh CLI 调用 GPT-Image-2、FLUX、Gemini 等 50+ 模型，实现文本、图片到图片生成、修复、编辑、升频等功能。",
+      "audience": "需要 AI 图像生成、编辑、艺术创作、产品设计等功能的用户和开发者。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "适用于用户提出 AI 图像生成、图片编辑、艺术创作等需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21408
+      },
+      "status": "watch"
+    },
+    {
+      "key": "vercel-labs/skills:find-skills",
+      "source": "vercel-labs/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/vercel-labs/skills",
+      "sourceUrl": "https://www.skills.sh/vercel-labs/skills/find-skills",
+      "summary": "find-skills 技能帮助用户发现和安装 agent skills，适用于用户提出“如何做 X”、“找技能”等扩展需求。",
+      "audience": "希望扩展 agent 能力、寻找特定功能技能的用户和开发者。",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "适用于用户主动寻求技能扩展或功能发现。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 13566
+      },
+      "status": "watch"
+    },
+    {
+      "key": "sleekdotdesign/agent-skills:sleek-design-mobile-apps",
+      "source": "sleekdotdesign/agent-skills",
+      "skillId": "sleek-design-mobile-apps",
+      "name": "sleek-design-mobile-apps",
+      "repositoryUrl": "https://github.com/sleekdotdesign/agent-skills",
+      "sourceUrl": "https://www.skills.sh/sleekdotdesign/agent-skills/sleek-design-mobile-apps",
+      "summary": "sleek-design-mobile-apps 技能用于设计移动应用、创建屏幕、构建 UI，并管理 Sleek 项目，适合高层设计和具体操作。",
+      "audience": "需要快速设计移动应用、管理 Sleek 项目的开发者和设计师。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适用于用户提出移动应用设计、项目管理、屏幕截图等需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 5766
+      },
+      "status": "watch"
+    }
+  ],
+  "sources": [
+    "https://www.skills.sh/trending",
+    "https://www.skills.sh/hot",
+    "https://github.com/ScrapeGraphAI/just-scrape",
+    "https://github.com/mattpocock/skills",
+    "https://github.com/xixu-me/skills",
+    "https://github.com/inference-sh/skills",
+    "https://github.com/vercel-labs/skills",
+    "https://github.com/sleekdotdesign/agent-skills"
+  ]
+}
