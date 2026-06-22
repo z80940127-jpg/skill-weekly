@@ -1,0 +1,319 @@
+{
+  "slug": "2026-06-22",
+  "issueNumber": 5,
+  "publishedAt": "2026-06-22",
+  "title": "Skill 周刊 · 第 05 期",
+  "intro": "本期依据近期热度与公开仓库信息，整理可供中文读者了解的开源 Agent Skills。",
+  "shortfallReason": null,
+  "featured": [
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:ace-step",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "ace-step",
+      "name": "ace-step",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/ace-step",
+      "summary": "ACE Step 是 StepFun-AI 的开放权重音乐基础模型，支持通过 RunComfy CLI 生成、修复和扩展音乐，可根据标签驱动（如风格、情绪、乐器）进行多语言创作。",
+      "audience": "需要 AI 音乐生成、修复或扩展的用户，尤其是希望通过标签控制音乐内容的创作者。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适用于希望利用 AI 技术进行音乐创作和编辑的场景。",
+      "caution": "兼容性未说明，使用前需确认环境支持。",
+      "metrics": {
+        "installs": 6078
+      },
+      "status": "featured"
+    },
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:controlnet-pose",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "controlnet-pose",
+      "name": "controlnet-pose",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/controlnet-pose",
+      "summary": "ControlNet Pose 技能通过 RunComfy CLI 实现基于姿态的生成，可将参考视频的动作迁移到目标角色，支持多种社区模型。",
+      "audience": "需要基于姿态生成或动作迁移的动画、视频创作者。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适用于角色动作迁移、动画生成等场景。",
+      "caution": "兼容性未说明，使用前需确认环境支持。",
+      "metrics": {
+        "installs": 5976
+      },
+      "status": "featured"
+    },
+    {
+      "key": "runcomfy-com/skills:ai-avatar-video",
+      "source": "runcomfy-com/skills",
+      "skillId": "ai-avatar-video",
+      "name": "ai-avatar-video",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/runcomfy-com/skills/ai-avatar-video",
+      "summary": "AI Avatar & Talking Head Video 技能通过 RunComfy CLI 创建 AI 虚拟人、口型同步视频，支持多种模型如 ByteDance OmniHuman、Wan-AI Wan 2-7。",
+      "audience": "需要生成虚拟人、口型同步视频的内容创作者、媒体工作者。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适用于音频驱动的虚拟人视频制作。",
+      "caution": "兼容性未说明，使用前需确认环境支持。",
+      "metrics": {
+        "installs": 5600
+      },
+      "status": "featured"
+    },
+    {
+      "key": "doany-ai/skills:image-to-video",
+      "source": "doany-ai/skills",
+      "skillId": "image-to-video",
+      "name": "image-to-video",
+      "repositoryUrl": "https://github.com/doany-ai/skills",
+      "sourceUrl": "https://www.skills.sh/doany-ai/skills/image-to-video",
+      "summary": "Image-to-Video 技能可将静态图片动画化，智能路由至 RunComfy 最适合的 i2v 模型，如 HappyHorse 1.0，支持身份保留和原生音频。",
+      "audience": "希望将图片转为动画视频的用户，尤其是对身份保留和音频有需求者。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适用于图片动画化、视频内容创作。",
+      "caution": "兼容性未说明，使用前需确认环境支持。",
+      "metrics": {
+        "installs": 5560
+      },
+      "status": "featured"
+    },
+    {
+      "key": "runcomfy-com/skills:image-edit",
+      "source": "runcomfy-com/skills",
+      "skillId": "image-edit",
+      "name": "image-edit",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/runcomfy-com/skills/image-edit",
+      "summary": "GPT Image Edit 技能通过 RunComfy 调用 OpenAI GPT Image 2 的 /edit 接口，结合官方提示模式提升图像编辑效果。",
+      "audience": "需要高质量 AI 图像编辑的用户，尤其是希望利用 GPT Image 2 的编辑能力者。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适用于图像修改、增强等场景。",
+      "caution": "兼容性未说明，使用前需确认环境支持。",
+      "metrics": {
+        "installs": 5553
+      },
+      "status": "featured"
+    }
+  ],
+  "stillHot": [
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:nano-banana-edit",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "nano-banana-edit",
+      "name": "nano-banana-edit",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/nano-banana-edit",
+      "summary": "Nano Banana Edit 技能通过 RunComfy 调用 Google Nano Banana 2，实现图像编辑，支持主体身份保留、背景替换、空间语言局部编辑、多图批量处理。",
+      "audience": "需要精细图像编辑、批量处理的用户，尤其是对身份保留和局部修改有需求者。",
+      "compatibility": [
+        "Gemini"
+      ],
+      "reason": "适用于复杂图像编辑任务。",
+      "caution": "仅标明兼容 Gemini，其他环境需自行验证。",
+      "metrics": {
+        "installs": 6017
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-me",
+      "source": "mattpocock/skills",
+      "skillId": "grill-me",
+      "name": "grill-me",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-me",
+      "summary": "grill-me 技能提供严苛的方案或设计面试，帮助用户提升方案或设计的严谨性。",
+      "audience": "需要方案、设计评审或自我提升的工程师、设计师。",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "适用于方案审核、设计优化等场景。",
+      "caution": "兼容 Codex、Claude Code，其他环境需自行验证。",
+      "metrics": {
+        "installs": 5203
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-with-docs",
+      "source": "mattpocock/skills",
+      "skillId": "grill-with-docs",
+      "name": "grill-with-docs",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-with-docs",
+      "summary": "grill-with-docs 技能在严苛面试过程中自动生成文档（ADR、术语表），结合 domain-modeling 技能。",
+      "audience": "需要方案评审并自动生成相关文档的工程师、设计师。",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "适用于文档自动化与方案审核结合场景。",
+      "caution": "兼容 Codex、Claude Code，其他环境需自行验证。",
+      "metrics": {
+        "installs": 4756
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "xixu-me/skills:github-actions-docs",
+      "source": "xixu-me/skills",
+      "skillId": "github-actions-docs",
+      "name": "github-actions-docs",
+      "repositoryUrl": "https://github.com/xixu-me/skills",
+      "sourceUrl": "https://www.skills.sh/xixu-me/skills/github-actions-docs",
+      "summary": "github-actions-docs 技能用于解答、指导 GitHub Actions 工作流编写、解释、定制、迁移、安全、故障排查等问题，涵盖语法、触发器、矩阵、Runner、缓存、Secrets、OIDC、部署等。",
+      "audience": "需要 GitHub Actions 工作流相关帮助的开发者、DevOps 工程师。",
+      "compatibility": [
+        "Claude Code"
+      ],
+      "reason": "适用于 CI/CD 自动化、工作流优化等场景。",
+      "caution": "兼容 Claude Code，其他环境需自行验证。",
+      "metrics": {
+        "installs": 2743
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "xixu-me/skills:use-my-browser",
+      "source": "xixu-me/skills",
+      "skillId": "use-my-browser",
+      "name": "use-my-browser",
+      "repositoryUrl": "https://github.com/xixu-me/skills",
+      "sourceUrl": "https://www.skills.sh/xixu-me/skills/use-my-browser",
+      "summary": "use-my-browser 技能适用于依赖用户实时浏览器会话或渲染状态的工作，如调试、DevTools 操作、登录后台、CMS 流程、表单、上传下载、媒体检查、DOM 操作等。",
+      "audience": "需要与用户浏览器实时交互的开发者、测试人员。",
+      "compatibility": [
+        "Claude Code"
+      ],
+      "reason": "适用于浏览器调试、前端开发、自动化测试等场景。",
+      "caution": "兼容 Claude Code，其他环境需自行验证。",
+      "metrics": {
+        "installs": 2709
+      },
+      "status": "still-hot"
+    }
+  ],
+  "watch": [
+    {
+      "key": "halt-catch-fire/skills:remotion-render",
+      "source": "halt-catch-fire/skills",
+      "skillId": "remotion-render",
+      "name": "remotion-render",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/halt-catch-fire/skills/remotion-render",
+      "summary": "remotion-render 技能通过 inference.sh 渲染 React/Remotion 组件代码为视频，支持所有 Remotion API，配置分辨率、帧率、时长、编码格式。",
+      "audience": "需要程序化生成动画视频的开发者、内容创作者。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "适用于自动化视频生成、动画制作等场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21338
+      },
+      "status": "watch"
+    },
+    {
+      "key": "halt-catch-fire/skills:ai-avatar-video",
+      "source": "halt-catch-fire/skills",
+      "skillId": "ai-avatar-video",
+      "name": "ai-avatar-video",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/halt-catch-fire/skills/ai-avatar-video",
+      "summary": "ai-avatar-video 技能通过 inference.sh CLI 创建 AI 虚拟人和口型同步视频，推荐 P-Video-Avatar，支持多种音频驱动模型和 TTS，覆盖多语言、情感调控。",
+      "audience": "需要生成虚拟人、口型同步视频的内容创作者、媒体工作者。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "适用于音频驱动的虚拟人视频制作。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21317
+      },
+      "status": "watch"
+    },
+    {
+      "key": "halt-catch-fire/skills:ai-image-generation",
+      "source": "halt-catch-fire/skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/halt-catch-fire/skills/ai-image-generation",
+      "summary": "ai-image-generation 技能通过 inference.sh CLI 调用 GPT-Image-2、FLUX、Gemini、Grok、Seedream、Reve 等 50+ 模型，支持文本生成图像、图像编辑、修复、LoRA 微调等。",
+      "audience": "需要多模型 AI 图像生成、编辑的用户。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "适用于多样化图像生成、编辑场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21317
+      },
+      "status": "watch"
+    },
+    {
+      "key": "vercel-labs/skills:find-skills",
+      "source": "vercel-labs/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/vercel-labs/skills",
+      "sourceUrl": "https://www.skills.sh/vercel-labs/skills/find-skills",
+      "summary": "find-skills 技能帮助用户发现和安装 agent 技能，适用于用户提出“如何做 X”、“找技能”等需求，支持多种代理环境。",
+      "audience": "希望扩展 agent 功能、寻找新技能的用户。",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "适用于技能发现、功能扩展场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 12771
+      },
+      "status": "watch"
+    },
+    {
+      "key": "agentspace-so/skills:find-skills",
+      "source": "agentspace-so/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/agentspace-so/skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/skills/find-skills",
+      "summary": "🔍 Find Skills 技能可跨 skills.sh、clawhub.ai、GitHub 等主流注册表搜索、筛选和安装 agent 技能，按原生指标展示热门技能。",
+      "audience": "希望高效发现、筛选 agent 技能的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适用于技能搜索、比较和安装场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 5508
+      },
+      "status": "watch"
+    }
+  ],
+  "sources": [
+    "https://www.skills.sh/trending",
+    "https://www.skills.sh/hot",
+    "https://github.com/agentspace-so/runcomfy-agent-skills",
+    "https://github.com/runcomfy-com/skills",
+    "https://github.com/doany-ai/skills",
+    "https://github.com/mattpocock/skills",
+    "https://github.com/xixu-me/skills",
+    "https://github.com/inference-sh/skills",
+    "https://github.com/vercel-labs/skills",
+    "https://github.com/agentspace-so/skills"
+  ]
+}
