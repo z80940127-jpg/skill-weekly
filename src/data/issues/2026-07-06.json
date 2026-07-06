@@ -1,0 +1,319 @@
+{
+  "slug": "2026-07-06",
+  "issueNumber": 6,
+  "publishedAt": "2026-07-06",
+  "title": "Skill 周刊 · 第 06 期",
+  "intro": "本期依据近期热度与公开仓库信息，整理可供中文读者了解的开源 Agent Skills。",
+  "shortfallReason": null,
+  "featured": [
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:flux-2-klein",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "flux-2-klein",
+      "name": "flux-2-klein",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/flux-2-klein",
+      "summary": "该技能可在RunComfy平台上，利用Flux 2 Klein（Black Forest Labs的快速蒸馏版Flux 2）生成图像，并自动应用模型推荐的提示模式，以获得更优质输出。",
+      "audience": "需要高效AI图像生成、追求高质量输出的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "集成了模型文档化的提示模式，提升生成效果。",
+      "caution": "兼容性未说明。",
+      "metrics": {
+        "installs": 6097
+      },
+      "status": "featured"
+    },
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:image-inpainting",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "image-inpainting",
+      "name": "image-inpainting",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/image-inpainting",
+      "summary": "该技能通过RunComfy CLI实现基于掩码的图像修复，支持调用Tongyi MAI Z-Image Turbo Inpainting等端点，具备掩码、强度和控制尺度等参数。",
+      "audience": "需要对图片进行局部修复或编辑的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "支持多种修复端点和参数，适合多样化修图需求。",
+      "caution": "兼容性未说明。",
+      "metrics": {
+        "installs": 6085
+      },
+      "status": "featured"
+    },
+    {
+      "key": "runcomfy-com/skills:ace-step",
+      "source": "runcomfy-com/skills",
+      "skillId": "ace-step",
+      "name": "ace-step",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/runcomfy-com/skills/ace-step",
+      "summary": "该技能可在RunComfy平台上，利用ACE Step模型生成、修复和扩展音乐，支持标签驱动的多语言音乐创作及编辑。",
+      "audience": "需要AI辅助音乐生成、编辑的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "支持多种音乐生成和编辑方式，适合音乐内容创作者。",
+      "caution": "兼容性未说明。",
+      "metrics": {
+        "installs": 5764
+      },
+      "status": "featured"
+    },
+    {
+      "key": "runcomfy-com/skills:face-swap",
+      "source": "runcomfy-com/skills",
+      "skillId": "face-swap",
+      "name": "face-swap",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/runcomfy-com/skills/face-swap",
+      "summary": "该技能可在RunComfy平台上实现图片或视频的人脸/角色替换，支持多种社区模型和精确换脸功能。",
+      "audience": "需要进行人脸替换、角色动画的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "集成多种换脸模型，适合多样化换脸场景。",
+      "caution": "兼容性未说明。",
+      "metrics": {
+        "installs": 5761
+      },
+      "status": "featured"
+    },
+    {
+      "key": "runcomfy-com/skills:seedance-v2",
+      "source": "runcomfy-com/skills",
+      "skillId": "seedance-v2",
+      "name": "seedance-v2",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/runcomfy-com/skills/seedance-v2",
+      "summary": "该技能可在RunComfy平台上，利用Seedance 2.0 Pro生成电影级短视频，支持多模态参考输入和自然音频同步。",
+      "audience": "需要高质量短视频生成的内容创作者。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "支持多模态输入和自然音频同步，提升视频表现力。",
+      "caution": "兼容性未说明。",
+      "metrics": {
+        "installs": 5753
+      },
+      "status": "featured"
+    }
+  ],
+  "stillHot": [
+    {
+      "key": "scrapegraphai/just-scrape:just-scrape",
+      "source": "scrapegraphai/just-scrape",
+      "skillId": "just-scrape",
+      "name": "just-scrape",
+      "repositoryUrl": "https://github.com/ScrapeGraphAI/just-scrape",
+      "sourceUrl": "https://www.skills.sh/scrapegraphai/just-scrape/just-scrape",
+      "summary": "该技能通过ScrapeGraph AI CLI实现网页搜索、抓取、结构化数据提取、多页爬取和页面变更监控等功能。",
+      "audience": "需要自动化网页数据采集、监控的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "支持多种网页数据采集和监控场景，适合数据分析和内容监控。",
+      "caution": "兼容性未说明。",
+      "metrics": {
+        "installs": 7065
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "agentspace-so/runcomfy-agent-skills:controlnet-pose",
+      "source": "agentspace-so/runcomfy-agent-skills",
+      "skillId": "controlnet-pose",
+      "name": "controlnet-pose",
+      "repositoryUrl": "https://github.com/agentspace-so/runcomfy-agent-skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/runcomfy-agent-skills/controlnet-pose",
+      "summary": "该技能通过RunComfy CLI实现基于姿态的图像生成，支持将参考视频的动作转移到目标角色等多种姿态控制功能。",
+      "audience": "需要姿态驱动图像生成或动画的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "支持多种姿态控制模型，适合动画和动作迁移场景。",
+      "caution": "兼容性未说明。",
+      "metrics": {
+        "installs": 6114
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "doany-ai/skills:image-inpainting",
+      "source": "doany-ai/skills",
+      "skillId": "image-inpainting",
+      "name": "image-inpainting",
+      "repositoryUrl": "https://github.com/doany-ai/skills",
+      "sourceUrl": "https://www.skills.sh/doany-ai/skills/image-inpainting",
+      "summary": "该技能通过RunComfy CLI实现基于掩码的图像修复，支持多端点调用，具备掩码、强度和控制尺度等参数。",
+      "audience": "需要对图片进行局部修复或编辑的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "功能与agentspace-so/runcomfy-agent-skills:image-inpainting类似，适合多样化修图需求。",
+      "caution": "兼容性未说明。",
+      "metrics": {
+        "installs": 5752
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-me",
+      "source": "mattpocock/skills",
+      "skillId": "grill-me",
+      "name": "grill-me",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-me",
+      "summary": "该技能可发起一场严格的方案或设计面试，帮助用户完善计划或设计。",
+      "audience": "需要对方案或设计进行深度审查的工程师或团队。",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "通过高强度提问，促进方案完善和风险识别。",
+      "caution": "仅兼容Codex、Claude Code。",
+      "metrics": {
+        "installs": 5005
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-with-docs",
+      "source": "mattpocock/skills",
+      "skillId": "grill-with-docs",
+      "name": "grill-with-docs",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-with-docs",
+      "summary": "该技能在严格面试方案或设计的同时，自动生成决策记录（ADR）和术语表。",
+      "audience": "需要方案审查并同步文档化的工程师或团队。",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "结合面试与文档生成，提升团队知识沉淀。",
+      "caution": "仅兼容Codex、Claude Code。",
+      "metrics": {
+        "installs": 4444
+      },
+      "status": "still-hot"
+    }
+  ],
+  "watch": [
+    {
+      "key": "halt-catch-fire/skills:ai-video-generation",
+      "source": "halt-catch-fire/skills",
+      "skillId": "ai-video-generation",
+      "name": "ai-video-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/halt-catch-fire/skills/ai-video-generation",
+      "summary": "该技能通过inference.sh CLI，支持调用Google Veo、Seedance 2.0等40余种模型，实现文本转视频、图像转视频等多种AI视频生成能力。",
+      "audience": "需要多模型AI视频生成的用户。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "集成多种主流视频生成模型，满足多样化视频创作需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21704
+      },
+      "status": "watch"
+    },
+    {
+      "key": "halt-catch-fire/skills:ai-image-generation",
+      "source": "halt-catch-fire/skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/halt-catch-fire/skills/ai-image-generation",
+      "summary": "该技能通过inference.sh CLI，支持调用GPT-Image-2、FLUX、Gemini等50余种模型，实现文本生成图像、图像编辑、修复等功能。",
+      "audience": "需要多模型AI图像生成与编辑的用户。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "集成多种主流图像生成模型，适合多样化创作场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21673
+      },
+      "status": "watch"
+    },
+    {
+      "key": "halt-catch-fire/skills:remotion-render",
+      "source": "halt-catch-fire/skills",
+      "skillId": "remotion-render",
+      "name": "remotion-render",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/halt-catch-fire/skills/remotion-render",
+      "summary": "该技能通过inference.sh，将React/Remotion组件代码渲染为视频，支持所有Remotion API及多种配置。",
+      "audience": "需要程序化生成动画视频的开发者。",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "支持TSX代码转MP4，适合自动化视频内容生产。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21668
+      },
+      "status": "watch"
+    },
+    {
+      "key": "vercel-labs/skills:find-skills",
+      "source": "vercel-labs/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/vercel-labs/skills",
+      "sourceUrl": "https://www.skills.sh/vercel-labs/skills/find-skills",
+      "summary": "该技能帮助用户发现和安装适合需求的agent技能，适用于寻找扩展功能时使用。",
+      "audience": "希望扩展agent能力或查找特定技能的用户。",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "便于快速定位和安装所需技能。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 12727
+      },
+      "status": "watch"
+    },
+    {
+      "key": "agentspace-so/skills:find-skills",
+      "source": "agentspace-so/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/agentspace-so/skills",
+      "sourceUrl": "https://www.skills.sh/agentspace-so/skills/find-skills",
+      "summary": "该技能可跨skills.sh、clawhub.ai、GitHub等主流注册表搜索agent技能，并按各自指标展示最优结果，便于发现和安装技能。",
+      "audience": "需要高效查找、筛选agent技能的用户。",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "支持多平台聚合搜索，提升技能发现效率。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 5661
+      },
+      "status": "watch"
+    }
+  ],
+  "sources": [
+    "https://www.skills.sh/trending",
+    "https://www.skills.sh/hot",
+    "https://github.com/agentspace-so/runcomfy-agent-skills",
+    "https://github.com/runcomfy-com/skills",
+    "https://github.com/ScrapeGraphAI/just-scrape",
+    "https://github.com/doany-ai/skills",
+    "https://github.com/mattpocock/skills",
+    "https://github.com/inference-sh/skills",
+    "https://github.com/vercel-labs/skills",
+    "https://github.com/agentspace-so/skills"
+  ]
+}
