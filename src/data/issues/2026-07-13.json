@@ -1,0 +1,274 @@
+{
+  "slug": "2026-07-13",
+  "issueNumber": 7,
+  "publishedAt": "2026-07-13",
+  "title": "Skill 周刊 · 第 07 期",
+  "intro": "本期依据近期热度与公开仓库信息，整理可供中文读者了解的开源 Agent Skills。",
+  "shortfallReason": null,
+  "featured": [
+    {
+      "key": "getpaperclipai/paperclip:design-guide",
+      "source": "getpaperclipai/paperclip",
+      "skillId": "design-guide",
+      "name": "design-guide",
+      "repositoryUrl": "https://github.com/getpaperclipai/paperclip",
+      "sourceUrl": "https://www.skills.sh/getpaperclipai/paperclip/design-guide",
+      "summary": "Paperclip UI设计系统指南，帮助构建一致且可复用的前端组件。适用于新建或修改UI组件、页面、功能、样式，以及理解设计语言和规范。内容涵盖组件创建、设计令牌、排版、状态/优先级系统、组合方式等。",
+      "audience": "前端开发者、设计师、Paperclip项目参与者",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "为保证UI一致性和可维护性，提供详细设计规范和组件开发指导。",
+      "caution": "仅适用于Paperclip相关前端开发，需遵循其设计语言和约定。",
+      "metrics": {
+        "installs": 10069
+      },
+      "status": "featured"
+    },
+    {
+      "key": "getpaperclipai/paperclip:para-memory-files",
+      "source": "getpaperclipai/paperclip",
+      "skillId": "para-memory-files",
+      "name": "para-memory-files",
+      "repositoryUrl": "https://github.com/getpaperclipai/paperclip",
+      "sourceUrl": "https://www.skills.sh/getpaperclipai/paperclip/para-memory-files",
+      "summary": "基于Tiago Forte的PARA方法的文件记忆系统。用于跨会话存储、检索、更新和组织知识。包含知识图谱（PARA文件夹+YAML事实）、每日笔记（时间线）、用户模式的隐性知识。支持规划文件、记忆衰减、知识管理。",
+      "audience": "知识管理者、Paperclip用户、需要长期知识组织的团队",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "提升知识可追溯性和组织效率，便于持续规划和回顾。",
+      "caution": "需理解PARA方法及其文件结构，适用于Paperclip环境。",
+      "metrics": {
+        "installs": 10039
+      },
+      "status": "featured"
+    },
+    {
+      "key": "getpaperclipai/paperclip:paperclip-converting-plans-to-tasks",
+      "source": "getpaperclipai/paperclip",
+      "skillId": "paperclip-converting-plans-to-tasks",
+      "name": "paperclip-converting-plans-to-tasks",
+      "repositoryUrl": "https://github.com/getpaperclipai/paperclip",
+      "sourceUrl": "https://www.skills.sh/getpaperclipai/paperclip/paperclip-converting-plans-to-tasks",
+      "summary": "指导如何将计划转化为可执行任务，适用于Paperclip公司内部。提供行业无关的分解方法，包括任务分配、依赖关系、并行化，便于执行器自动接管工作。",
+      "audience": "项目经理、团队负责人、Paperclip用户",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "帮助高效分解和分配工作，确保计划可落地执行。",
+      "caution": "仅适用于Paperclip体系，需结合其任务分配机制。",
+      "metrics": {
+        "installs": 10038
+      },
+      "status": "featured"
+    },
+    {
+      "key": "mattpocock/skills:grilling",
+      "source": "mattpocock/skills",
+      "skillId": "grilling",
+      "name": "grilling",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grilling",
+      "summary": "对计划或设计进行严苛盘问，逐步深入每个决策分支，解决依赖，直到达成共识。适用于用户希望在实施前压力测试方案。",
+      "audience": "工程师、产品经理、设计师、需要方案验证者",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "通过全面提问和讨论，发现潜在问题，优化设计或计划。",
+      "caution": "过程可能冗长，需耐心应对详细追问。",
+      "metrics": {
+        "installs": 6603
+      },
+      "status": "featured"
+    },
+    {
+      "key": "heygen-com/hyperframes:media-use",
+      "source": "heygen-com/hyperframes",
+      "skillId": "media-use",
+      "name": "media-use",
+      "repositoryUrl": "https://github.com/heygen-com/hyperframes",
+      "sourceUrl": "https://www.skills.sh/heygen-com/hyperframes/media-use",
+      "summary": "HyperFrames项目的媒体操作技能，支持解析背景音乐、音效、图片、图标、品牌Logo、语音、色彩分级等为本地文件或可粘贴块。可调用TTS、音乐、图像模型生成缺失内容，支持配音、转录、字幕、背景移除等。",
+      "audience": "媒体内容创作者、HyperFrames项目开发者、AI代理用户",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "简化媒体资源管理与生成，提升项目自动化和多媒体处理能力。",
+      "caution": "仅适用于HyperFrames项目，需了解其媒体操作流程。",
+      "metrics": {
+        "installs": 4213
+      },
+      "status": "featured"
+    }
+  ],
+  "stillHot": [
+    {
+      "key": "mattpocock/skills:grill-me",
+      "source": "mattpocock/skills",
+      "skillId": "grill-me",
+      "name": "grill-me",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-me",
+      "summary": "对计划或设计进行持续盘问，旨在提升方案的严谨性。可触发'/grilling'会话。",
+      "audience": "工程师、产品经理、设计师、需要方案优化者",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "通过反复提问，帮助用户发现并解决设计或计划中的不足。",
+      "caution": "需准备接受高强度、细致的追问。",
+      "metrics": {
+        "installs": 7320
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-with-docs",
+      "source": "mattpocock/skills",
+      "skillId": "grill-with-docs",
+      "name": "grill-with-docs",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-with-docs",
+      "summary": "在盘问计划或设计的同时，自动生成决策记录（ADR）和术语表。结合'/domain-modeling'技能，触发'/grilling'会话。",
+      "audience": "工程师、项目文档编写者、需要方案审查和记录者",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "边盘问边生成文档，便于后续追溯和团队共享。",
+      "caution": "需配合相关技能使用，过程可能较为繁琐。",
+      "metrics": {
+        "installs": 6891
+      },
+      "status": "still-hot"
+    }
+  ],
+  "watch": [
+    {
+      "key": "101-skills/skills:ai-video-generation",
+      "source": "101-skills/skills",
+      "skillId": "ai-video-generation",
+      "name": "ai-video-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/101-skills/skills/ai-video-generation",
+      "summary": "通过inference.sh CLI调用Google Veo、Seedance 2.0、HappyHorse、Wan、Grok等40+模型生成AI视频。支持文本生成视频、图片生成视频、参考视频生成、视频编辑、口型同步、头像动画、视频增强、拟声等。",
+      "audience": "AI视频创作者、内容制作团队、需要多模型视频生成者",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "提供多种AI视频生成与编辑能力，适合多样化内容需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21543
+      },
+      "status": "watch"
+    },
+    {
+      "key": "101-skills/skills:ai-image-generation",
+      "source": "101-skills/skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/101-skills/skills/ai-image-generation",
+      "summary": "通过inference.sh CLI调用GPT-Image-2、FLUX、Gemini、Grok、Seedream、Reve等50+模型生成AI图片。支持文本生成图片、图片编辑、修复、LoRA、放大、文字渲染等。",
+      "audience": "AI美术创作者、产品设计师、内容制作团队",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "多模型支持，满足AI艺术、产品原型、内容生成等需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21491
+      },
+      "status": "watch"
+    },
+    {
+      "key": "101-skills/skills:remotion-render",
+      "source": "101-skills/skills",
+      "skillId": "remotion-render",
+      "name": "remotion-render",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/101-skills/skills/remotion-render",
+      "summary": "通过inference.sh渲染React/Remotion组件代码为MP4视频。支持所有Remotion API，可配置分辨率、帧率、时长、编码。适用于程序化视频生成、动画、数据驱动视频、React动画转视频。",
+      "audience": "前端开发者、动画设计师、数据可视化团队",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "实现代码驱动的视频生成，提升动画与数据展示效率。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21488
+      },
+      "status": "watch"
+    },
+    {
+      "key": "vercel-labs/skills:find-skills",
+      "source": "vercel-labs/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/vercel-labs/skills",
+      "sourceUrl": "https://www.skills.sh/vercel-labs/skills/find-skills",
+      "summary": "帮助用户发现和安装agent技能，适用于用户提出“如何做X”、“寻找X技能”等需求。可检索并推荐可安装技能。",
+      "audience": "AI代理用户、技能扩展需求者、开发者",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "便捷查找和扩展agent功能，提升工作效率。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 13288
+      },
+      "status": "watch"
+    },
+    {
+      "key": "lllllllama/rigorpilot-skills:ai-research-explore",
+      "source": "lllllllama/rigorpilot-skills",
+      "skillId": "ai-research-explore",
+      "name": "ai-research-explore",
+      "repositoryUrl": "https://github.com/lllllllama/RigorPilot-Skills",
+      "sourceUrl": "https://www.skills.sh/lllllllama/rigorpilot-skills/ai-research-explore",
+      "summary": "Rigor Explore兼容技能，用于深度学习研究候选探索。适合已确定任务、数据集、基准、评估方法、SOTA参考后，进行候选方案探索、审计、对比、实验治理。",
+      "audience": "AI研究人员、深度学习实验团队",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "保障研究可比性、可复现性、审计性，推动有意义的研究进展。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 4442
+      },
+      "status": "watch"
+    }
+  ],
+  "sources": [
+    "https://www.skills.sh/trending",
+    "https://www.skills.sh/hot",
+    "https://github.com/getpaperclipai/paperclip",
+    "https://github.com/mattpocock/skills",
+    "https://github.com/heygen-com/hyperframes",
+    "https://github.com/inference-sh/skills",
+    "https://github.com/vercel-labs/skills",
+    "https://github.com/lllllllama/RigorPilot-Skills"
+  ]
+}
