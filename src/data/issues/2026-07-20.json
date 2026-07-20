@@ -1,0 +1,332 @@
+{
+  "slug": "2026-07-20",
+  "issueNumber": 8,
+  "publishedAt": "2026-07-20",
+  "title": "Skill 周刊 · 第 08 期",
+  "intro": "本期依据近期热度与公开仓库信息，整理可供中文读者了解的开源 Agent Skills。",
+  "shortfallReason": null,
+  "featured": [
+    {
+      "key": "getpaperclipai/paperclip:paperclip-create-agent",
+      "source": "getpaperclipai/paperclip",
+      "skillId": "paperclip-create-agent",
+      "name": "paperclip-create-agent",
+      "repositoryUrl": "https://github.com/getpaperclipai/paperclip",
+      "sourceUrl": "https://www.skills.sh/getpaperclipai/paperclip/paperclip-create-agent",
+      "summary": "paperclip-create-agent 用于在 Paperclip 平台创建新 AI agent，支持治理感知的招聘流程。可用于检查适配器配置、比较现有 agent 配置、起草新 agent 提示与配置，并提交招聘请求。",
+      "audience": "企业管理者、AI agent 管理人员、开发者",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "适合需要规范化 agent 创建、配置和治理流程的团队或组织。",
+      "caution": "仅限于 Paperclip 平台相关 agent 管理，需了解平台操作流程。",
+      "metrics": {
+        "installs": 14921
+      },
+      "status": "featured"
+    },
+    {
+      "key": "getpaperclipai/paperclip:paperclip-board",
+      "source": "getpaperclipai/paperclip",
+      "skillId": "paperclip-board",
+      "name": "paperclip-board",
+      "repositoryUrl": "https://github.com/getpaperclipai/paperclip",
+      "sourceUrl": "https://www.skills.sh/getpaperclipai/paperclip/paperclip-board",
+      "summary": "paperclip-board 支持以董事会成员身份管理 Paperclip 公司，包括公司创建、CEO 设置、招聘计划、agent 管理、审批、任务监控、成本监督和成果审核。",
+      "audience": "企业高管、董事会成员、agent 管理者",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "适用于需要全面掌控公司 AI agent 管理和治理的场景。",
+      "caution": "功能覆盖面广，需熟悉 Paperclip 平台及相关企业流程。",
+      "metrics": {
+        "installs": 14921
+      },
+      "status": "featured"
+    },
+    {
+      "key": "skills-collective/skills:ai-image-generation",
+      "source": "skills-collective/skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/skills-collective/skills/ai-image-generation",
+      "summary": "ai-image-generation 可通过 RunComfy CLI 调用多种 AI 图像生成模型（如 FLUX、Google Nano Banana、OpenAI GPT Image 2 等），实现图像生成与编辑。",
+      "audience": "AI 媒体内容创作者、开发者",
+      "compatibility": [
+        "Gemini"
+      ],
+      "reason": "适合需要多模型图像生成与编辑的用户，支持品牌定制与意图路由。",
+      "caution": "仅支持 Gemini 平台，需使用 RunComfy CLI。",
+      "metrics": {
+        "installs": 4209
+      },
+      "status": "featured"
+    },
+    {
+      "key": "skills-collective/skills:image-to-video",
+      "source": "skills-collective/skills",
+      "skillId": "image-to-video",
+      "name": "image-to-video",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/skills-collective/skills/image-to-video",
+      "summary": "image-to-video 可在 RunComfy 平台将静态图片动画化，智能路由到合适的 i2v 模型（如 HappyHorse 1.0），支持音频与身份保留。",
+      "audience": "AI 媒体内容创作者、开发者",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适合需要将图片转为视频动画的场景，自动匹配最佳模型。",
+      "caution": "兼容性未说明，需确认 RunComfy 平台支持情况。",
+      "metrics": {
+        "installs": 4208
+      },
+      "status": "featured"
+    },
+    {
+      "key": "skills-collective/skills:ai-music",
+      "source": "skills-collective/skills",
+      "skillId": "ai-music",
+      "name": "ai-music",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/skills-collective/skills/ai-music",
+      "summary": "ai-music 可通过 RunComfy CLI 调用多种 AI 音乐生成模型（如 ElevenLabs、ACE Step），生成高品质 AI 音乐。",
+      "audience": "音乐创作者、AI 媒体开发者",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "适合需要多模型音乐生成与编辑的用户，支持多种风格与长度。",
+      "caution": "兼容性未说明，需确认 RunComfy 平台支持情况。",
+      "metrics": {
+        "installs": 4175
+      },
+      "status": "featured"
+    }
+  ],
+  "stillHot": [
+    {
+      "key": "getpaperclipai/paperclip:design-guide",
+      "source": "getpaperclipai/paperclip",
+      "skillId": "design-guide",
+      "name": "design-guide",
+      "repositoryUrl": "https://github.com/getpaperclipai/paperclip",
+      "sourceUrl": "https://www.skills.sh/getpaperclipai/paperclip/design-guide",
+      "summary": "design-guide 提供 Paperclip UI 设计系统指南，帮助构建一致、可复用的前端组件，适用于新建、修改 UI 组件、页面、功能及样式。",
+      "audience": "前端开发者、UI/UX 设计师",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "适用于需要遵循统一设计语言和规范的开发团队。",
+      "caution": "仅适用于 Paperclip 前端开发，需理解设计系统内容。",
+      "metrics": {
+        "installs": 14946
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-me",
+      "source": "mattpocock/skills",
+      "skillId": "grill-me",
+      "name": "grill-me",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-me",
+      "summary": "grill-me 用于对用户进行多轮、全面的设计决策访谈，构建决策树，帮助达成共识。",
+      "audience": "产品经理、设计师、开发者",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "适合需要深入梳理设计决策、压力测试方案的场景。",
+      "caution": "仅支持 Codex 和 Claude Code，禁用模型调用。",
+      "metrics": {
+        "installs": 7090
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-with-docs",
+      "source": "mattpocock/skills",
+      "skillId": "grill-with-docs",
+      "name": "grill-with-docs",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-with-docs",
+      "summary": "grill-with-docs 用于强化设计或方案的访谈，同时自动生成决策文档（ADR）和术语表。",
+      "audience": "产品经理、设计师、开发者",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "适合需要边访谈边记录决策文档的场景。",
+      "caution": "仅支持 Codex 和 Claude Code，禁用模型调用。",
+      "metrics": {
+        "installs": 6264
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grilling",
+      "source": "mattpocock/skills",
+      "skillId": "grilling",
+      "name": "grilling",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grilling",
+      "summary": "grilling 用于对用户的计划、决策或想法进行多轮压力测试访谈，逐步梳理决策树，确保理解和完善。",
+      "audience": "产品经理、设计师、开发者",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "适合需要全面检视和优化方案的场景。",
+      "caution": "仅支持 Codex 和 Claude Code。",
+      "metrics": {
+        "installs": 6013
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "heygen-com/hyperframes:media-use",
+      "source": "heygen-com/hyperframes",
+      "skillId": "media-use",
+      "name": "media-use",
+      "repositoryUrl": "https://github.com/heygen-com/hyperframes",
+      "sourceUrl": "https://www.skills.sh/heygen-com/hyperframes/media-use",
+      "summary": "media-use 是 HyperFrames 项目的媒体操作系统，支持解析背景音乐、音效、图片、图标、品牌 logo、配音、调色等为本地文件或可粘贴块，并记录账本；缺失时可调用 TTS、音乐、图像模型生成。",
+      "audience": "媒体内容开发者、AI 项目开发者",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "适合需要统一管理和生成多种媒体资源的场景。",
+      "caution": "需熟悉 HyperFrames 项目及相关操作流程。",
+      "metrics": {
+        "installs": 4134
+      },
+      "status": "still-hot"
+    }
+  ],
+  "watch": [
+    {
+      "key": "101-skills/skills:ai-video-generation",
+      "source": "101-skills/skills",
+      "skillId": "ai-video-generation",
+      "name": "ai-video-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/101-skills/skills/ai-video-generation",
+      "summary": "ai-video-generation 可通过 inference.sh CLI 调用 Google Veo、Seedance 2.0、HappyHorse 等 40+ AI 视频生成模型，支持文本、图片、参考视频生成，涵盖多种能力。",
+      "audience": "AI 视频内容创作者、开发者",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "适合需要多模型视频生成与编辑的用户，支持多种生成方式。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21469
+      },
+      "status": "watch"
+    },
+    {
+      "key": "101-skills/skills:ai-image-generation",
+      "source": "101-skills/skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/101-skills/skills/ai-image-generation",
+      "summary": "ai-image-generation 可通过 inference.sh CLI 调用 GPT-Image-2、FLUX、Gemini、Grok、Seedream 等 50+ AI 图像生成模型，支持文本生成、图像编辑、修复等多种能力。",
+      "audience": "AI 图像内容创作者、开发者",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "适合需要多模型图像生成与编辑的用户，支持多种生成方式。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21413
+      },
+      "status": "watch"
+    },
+    {
+      "key": "101-skills/skills:twitter-automation",
+      "source": "101-skills/skills",
+      "skillId": "twitter-automation",
+      "name": "twitter-automation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/101-skills/skills/twitter-automation",
+      "summary": "twitter-automation 可通过 inference.sh CLI 自动化 Twitter/X 操作，包括发推、点赞、转发、发送私信、关注用户、获取资料等。",
+      "audience": "社交媒体运营者、自动化开发者",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "适合需要批量或自动化管理 Twitter/X 内容和用户的场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21412
+      },
+      "status": "watch"
+    },
+    {
+      "key": "vercel-labs/skills:find-skills",
+      "source": "vercel-labs/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/vercel-labs/skills",
+      "sourceUrl": "https://www.skills.sh/vercel-labs/skills/find-skills",
+      "summary": "find-skills 帮助用户发现和安装 agent 技能，适用于用户提出“如何做 X”、“查找 X 技能”等需求时。",
+      "audience": "AI agent 用户、开发者",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "适合需要扩展 agent 功能或寻找特定技能的场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 12658
+      },
+      "status": "watch"
+    },
+    {
+      "key": "lllllllama/rigorpilot-skills:ai-research-explore",
+      "source": "lllllllama/rigorpilot-skills",
+      "skillId": "ai-research-explore",
+      "name": "ai-research-explore",
+      "repositoryUrl": "https://github.com/lllllllama/RigorPilot-Skills",
+      "sourceUrl": "https://www.skills.sh/lllllllama/rigorpilot-skills/ai-research-explore",
+      "summary": "ai-research-explore 用于深度学习研究候选探索，需先确定任务、数据集、基准、评估方法和 SOTA 参考，仅做候选探索。",
+      "audience": "AI 研究人员、深度学习实验者",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "适合需要基于现有研究进行可比较、可复现、可审计探索的场景。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 4198
+      },
+      "status": "watch"
+    }
+  ],
+  "sources": [
+    "https://www.skills.sh/trending",
+    "https://www.skills.sh/hot",
+    "https://github.com/getpaperclipai/paperclip",
+    "https://github.com/runcomfy-com/skills",
+    "https://github.com/mattpocock/skills",
+    "https://github.com/heygen-com/hyperframes",
+    "https://github.com/inference-sh/skills",
+    "https://github.com/vercel-labs/skills",
+    "https://github.com/lllllllama/RigorPilot-Skills"
+  ]
+}
