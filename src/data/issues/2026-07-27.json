@@ -1,0 +1,333 @@
+{
+  "slug": "2026-07-27",
+  "issueNumber": 9,
+  "publishedAt": "2026-07-27",
+  "title": "Skill 周刊 · 第 09 期",
+  "intro": "本期依据近期热度与公开仓库信息，整理可供中文读者了解的开源 Agent Skills。",
+  "shortfallReason": null,
+  "featured": [
+    {
+      "key": "skills-collective/skills:video-edit",
+      "source": "skills-collective/skills",
+      "skillId": "video-edit",
+      "name": "video-edit",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/skills-collective/skills/video-edit",
+      "summary": "该技能为 RunComfy 平台上的智能视频编辑路由器，根据用户意图匹配合适的视频编辑模型（如 Wan 2.7），支持视频重塑、背景替换、包装更换、身份与动作调整等。",
+      "audience": "需要在 RunComfy 上进行视频编辑的用户",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "可自动根据用户需求选择最适合的视频编辑模型，简化操作流程。",
+      "caution": "兼容性未说明，具体支持平台或工具需进一步确认。",
+      "metrics": {
+        "installs": 20356
+      },
+      "status": "featured"
+    },
+    {
+      "key": "skills-collective/skills:ai-video-generation",
+      "source": "skills-collective/skills",
+      "skillId": "ai-video-generation",
+      "name": "ai-video-generation",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/skills-collective/skills/ai-video-generation",
+      "summary": "该技能通过 RunComfy CLI 智能路由生成 AI 视频，覆盖 HappyHorse、Wan-AI 等多种模型，支持音频驱动口型同步、原生音频等功能。",
+      "audience": "需要使用 RunComfy 平台生成 AI 视频的用户",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "可根据需求自动选择合适的视频生成模型，提升效率。",
+      "caution": "兼容性未说明，具体支持平台或工具需进一步确认。",
+      "metrics": {
+        "installs": 20296
+      },
+      "status": "featured"
+    },
+    {
+      "key": "vercel-labs/skills:find-skills",
+      "source": "vercel-labs/skills",
+      "skillId": "find-skills",
+      "name": "find-skills",
+      "repositoryUrl": "https://github.com/vercel-labs/skills",
+      "sourceUrl": "https://www.skills.sh/vercel-labs/skills/find-skills",
+      "summary": "该技能帮助用户发现和安装代理技能，适用于用户提出“如何做X”、“寻找X技能”等扩展需求。",
+      "audience": "希望扩展代理功能、寻找新技能的用户",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "便于快速定位和安装所需技能，提升代理能力。",
+      "caution": "仅支持部分代理平台（Codex、Claude Code、Cursor、Gemini）。",
+      "metrics": {
+        "installs": 11574
+      },
+      "status": "featured"
+    },
+    {
+      "key": "stablyai/orca:orchestration",
+      "source": "stablyai/orca",
+      "skillId": "orchestration",
+      "name": "orchestration",
+      "repositoryUrl": "https://github.com/stablyai/orca",
+      "sourceUrl": "https://www.skills.sh/stablyai/orca/orchestration",
+      "summary": "Orca 编排技能用于多代理结构化协作，包括线程消息、任务分发、决策门、工作拆分等。",
+      "audience": "需要多代理协作、任务编排的开发者或团队",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor"
+      ],
+      "reason": "支持复杂任务流程和多代理协调，提高工作效率。",
+      "caution": "仅支持 Codex、Claude Code、Cursor 平台。",
+      "metrics": {
+        "installs": 5391
+      },
+      "status": "featured"
+    },
+    {
+      "key": "heygen-com/hyperframes:hyperframes",
+      "source": "heygen-com/hyperframes",
+      "skillId": "hyperframes",
+      "name": "hyperframes",
+      "repositoryUrl": "https://github.com/heygen-com/hyperframes",
+      "sourceUrl": "https://www.skills.sh/heygen-com/hyperframes/hyperframes",
+      "summary": "HyperFrames 动画技能涵盖场景动画规则、设计蓝图、场景切换及七种运行时适配器（如 GSAP、Lottie、Three.js 等），适用于任何动画设计需求。",
+      "audience": "需要为网页或应用设计动画的开发者、设计师",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "提供全面的动画知识和多种技术适配，便于实现复杂动画效果。",
+      "caution": "仅支持 Codex、Claude Code、Cursor、Gemini 平台。",
+      "metrics": {
+        "installs": 5045
+      },
+      "status": "featured"
+    }
+  ],
+  "stillHot": [
+    {
+      "key": "skills-collective/skills:ai-music",
+      "source": "skills-collective/skills",
+      "skillId": "ai-music",
+      "name": "ai-music",
+      "repositoryUrl": "https://github.com/runcomfy-com/skills",
+      "sourceUrl": "https://www.skills.sh/skills-collective/skills/ai-music",
+      "summary": "该技能通过 RunComfy CLI 智能路由生成 AI 音乐，支持 ElevenLabs、ACE Step 等模型，覆盖高质量人声、立体声、不同时长等。",
+      "audience": "需要在 RunComfy 平台生成 AI 音乐的用户",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "可根据需求自动选择合适的音乐生成模型，提升创作效率。",
+      "caution": "兼容性未说明，具体支持平台或工具需进一步确认。",
+      "metrics": {
+        "installs": 20329
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "getpaperclipai/paperclip:design-guide",
+      "source": "getpaperclipai/paperclip",
+      "skillId": "design-guide",
+      "name": "design-guide",
+      "repositoryUrl": "https://github.com/getpaperclipai/paperclip",
+      "sourceUrl": "https://www.skills.sh/getpaperclipai/paperclip/design-guide",
+      "summary": "Paperclip UI 设计系统指南，帮助构建一致、可复用的前端组件，适用于新建或修改 UI 元素、页面、功能。",
+      "audience": "前端开发者、设计师，使用 Paperclip 管理代理的团队",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "规范设计语言与组件，提升界面一致性和开发效率。",
+      "caution": "仅支持 Codex、Claude Code、Cursor、Gemini 平台。",
+      "metrics": {
+        "installs": 14472
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "getpaperclipai/paperclip:para-memory-files",
+      "source": "getpaperclipai/paperclip",
+      "skillId": "para-memory-files",
+      "name": "para-memory-files",
+      "repositoryUrl": "https://github.com/getpaperclipai/paperclip",
+      "sourceUrl": "https://www.skills.sh/getpaperclipai/paperclip/para-memory-files",
+      "summary": "基于 Tiago Forte 的 PARA 方法的文件记忆系统，支持知识存储、检索、更新和组织，包含知识图谱、每日笔记、原始文件三层结构。",
+      "audience": "需要跨会话管理和组织知识的用户或团队",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "便于系统化管理知识和信息，提高工作效率。",
+      "caution": "仅支持 Codex、Claude Code、Cursor、Gemini 平台。",
+      "metrics": {
+        "installs": 14442
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "getpaperclipai/paperclip:paperclip-board",
+      "source": "getpaperclipai/paperclip",
+      "skillId": "paperclip-board",
+      "name": "paperclip-board",
+      "repositoryUrl": "https://github.com/getpaperclipai/paperclip",
+      "sourceUrl": "https://www.skills.sh/getpaperclipai/paperclip/paperclip-board",
+      "summary": "以董事会成员身份管理 Paperclip 公司，包括公司创建、CEO设置、招聘、代理管理、审批、任务监控、成本监督等。",
+      "audience": "使用 Paperclip 管理代理和公司运营的用户",
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "Gemini"
+      ],
+      "reason": "通过聊天方式高效管理公司和代理，简化流程。",
+      "caution": "仅支持 Codex、Claude Code、Cursor、Gemini 平台。",
+      "metrics": {
+        "installs": 14440
+      },
+      "status": "still-hot"
+    },
+    {
+      "key": "mattpocock/skills:grill-me",
+      "source": "mattpocock/skills",
+      "skillId": "grill-me",
+      "name": "grill-me",
+      "repositoryUrl": "https://github.com/mattpocock/skills",
+      "sourceUrl": "https://www.skills.sh/mattpocock/skills/grill-me",
+      "summary": "批量面试技能，通过设计树结构，轮番提问前沿问题，帮助用户梳理决策分支和理解。",
+      "audience": "需要系统梳理设计决策、进行深入面试的用户",
+      "compatibility": [
+        "Codex",
+        "Claude Code"
+      ],
+      "reason": "可全面挖掘用户思路和决策逻辑，促进深度交流。",
+      "caution": "仅支持 Codex、Claude Code 平台。",
+      "metrics": {
+        "installs": 7017
+      },
+      "status": "still-hot"
+    }
+  ],
+  "watch": [
+    {
+      "key": "101-skills/skills:ai-video-generation",
+      "source": "101-skills/skills",
+      "skillId": "ai-video-generation",
+      "name": "ai-video-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/101-skills/skills/ai-video-generation",
+      "summary": "通过 inference.sh CLI 使用 Google Veo、Seedance、HappyHorse、Wan、Grok 等 40+ 模型生成 AI 视频，支持文本、图片、参考视频等多种输入方式。",
+      "audience": "需要多模型、多方式生成 AI 视频的用户",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "覆盖丰富模型和生成方式，满足多样化视频创作需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21616
+      },
+      "status": "watch"
+    },
+    {
+      "key": "101-skills/skills:ai-image-generation",
+      "source": "101-skills/skills",
+      "skillId": "ai-image-generation",
+      "name": "ai-image-generation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/101-skills/skills/ai-image-generation",
+      "summary": "通过 inference.sh CLI 使用 GPT-Image-2、FLUX、Gemini、Grok、Seedream、Reve 等 50+ 模型生成 AI 图片，支持文本、图片、修复、LoRA 等功能。",
+      "audience": "需要多模型生成 AI 图片的用户",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "支持多种生成方式和模型，满足多样化图片创作需求。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21548
+      },
+      "status": "watch"
+    },
+    {
+      "key": "101-skills/skills:ai-avatar-video",
+      "source": "101-skills/skills",
+      "skillId": "ai-avatar-video",
+      "name": "ai-avatar-video",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/101-skills/skills/ai-avatar-video",
+      "summary": "通过 inference.sh CLI 创建 AI 头像和口播视频，推荐 P-Video-Avatar，支持多语言、情感驱动音频、文本驱动等。",
+      "audience": "需要生成 AI 头像、口播视频的用户",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "支持多模型和音频驱动，适合多场景应用。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 21541
+      },
+      "status": "watch"
+    },
+    {
+      "key": "doany-skills/skills:reddit-automation",
+      "source": "doany-skills/skills",
+      "skillId": "reddit-automation",
+      "name": "reddit-automation",
+      "repositoryUrl": "https://github.com/doany-skills/skills",
+      "sourceUrl": "https://www.skills.sh/doany-skills/skills/reddit-automation",
+      "summary": "自动查找 Reddit 上高意向用户提问的帖子，并生成真实、诚实的回复，适合产品推广与用户互动。",
+      "audience": "希望在 Reddit 上推广产品、与高意向用户互动的用户",
+      "compatibility": [
+        "未说明"
+      ],
+      "reason": "可自动定位目标用户并生成合适回复，提升推广效率。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 19165
+      },
+      "status": "watch"
+    },
+    {
+      "key": "magentosh/skills:twitter-automation",
+      "source": "magentosh/skills",
+      "skillId": "twitter-automation",
+      "name": "twitter-automation",
+      "repositoryUrl": "https://github.com/inference-sh/skills",
+      "sourceUrl": "https://www.skills.sh/magentosh/skills/twitter-automation",
+      "summary": "通过 inference.sh CLI 自动化 Twitter/X 操作，包括发帖、点赞、转发、私信、关注等，支持内容排程和用户管理。",
+      "audience": "需要自动化管理 Twitter/X 内容和用户的用户",
+      "compatibility": [
+        "Claude Code",
+        "Gemini"
+      ],
+      "reason": "覆盖多种操作，提升社交媒体管理效率。",
+      "caution": "公开信息不足，未进入正式精选；请勿直接安装。",
+      "metrics": {
+        "installs": 7329
+      },
+      "status": "watch"
+    }
+  ],
+  "sources": [
+    "https://www.skills.sh/trending",
+    "https://www.skills.sh/hot",
+    "https://github.com/runcomfy-com/skills",
+    "https://github.com/vercel-labs/skills",
+    "https://github.com/stablyai/orca",
+    "https://github.com/heygen-com/hyperframes",
+    "https://github.com/getpaperclipai/paperclip",
+    "https://github.com/mattpocock/skills",
+    "https://github.com/inference-sh/skills",
+    "https://github.com/doany-skills/skills"
+  ]
+}
